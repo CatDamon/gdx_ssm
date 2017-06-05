@@ -5,4 +5,11 @@
 	<select id="select" resultType="Map">
 		select * from ry_user
 	</select>
+
+	<!-- 根据用户名查询用户信息 -->
+	<select id="selectUserAll" parameterType="pd" resultType="pd">
+		select * from ry_user
+		where
+			username = #{userName}
+	</select>
 </mapper>

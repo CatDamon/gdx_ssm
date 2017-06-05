@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
+import ssm.entity.User;
 import ssm.service.login.LoginService;
 import ssm.utils.Const;
 import ssm.utils.PageData;
@@ -53,15 +54,28 @@ public class LoginCtrl extends BaseController {
 		PageData userData = this.getPageData();
 		String userName = userData.getString("userName");
 		String userPassword = userData.getString("password");
+
+
+
+
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(userName,userPassword); 
 		try { 
 			subject.login(token); 
 			map.put("msg", "success");
+			//登录成功,把user信息存到session里面
+			PageData loginData = this.loginService.selectUserAll(userData);
+			if(loginData != null){
+				this.getSession().setAttribute(Const.SESSION_USER,loginData.convertToBean(User.class));
+			}
+
+
 		} catch (AuthenticationException e) { 
 			map.put("message", "身份验证失败");
 			logger.error(e.getMessage());
 			return map;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		return map;
 	}

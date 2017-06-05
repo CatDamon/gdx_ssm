@@ -272,34 +272,7 @@ function closePage() {
 }
 
 
-/*循环菜单*/
-function initMenu(menu,parent){
-	for(var i=0; i<menu.length; i++){   
-		var item = menu[i];
-		var str = "";
-		try{
-			if(item.isHeader == "1"){
-				str = "<li class='menu-header'>"+item.name+"</li>";
-				$(parent).append(str);
-				if(item.childMenus != ""){
-					initMenu(item.childMenus,parent);
-				}
-			}else{
-				item.icon == "" ? item.icon = "&#xe610" : item.icon = item.icon;
-				if(item.childMenus == ""){
-					str = "<li><a href='"+item.url+"'><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
-					$(parent).append(str);
-				}else{
-					str = "<li><a href='"+item.url+"'><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
-					str +="<ul class='menu-item-child' id='menu-child-"+item.id+"'></ul></li>";
-					$(parent).append(str);
-					var childParent = $("#menu-child-"+item.id);
-					initMenu(item.childMenus,childParent);
-				}
-			}
-		}catch(e){}
-	}
-}
+
 
 
 
@@ -389,6 +362,35 @@ function getMathColor(){
 		var color = arr[num-1];
 		$(".menu-item > a").eq(i).find("i:first").css("color",color);
 	}
+}
+
+/*循环菜单*/
+function initMenu(menu,parent){
+    for(var i=0; i<menu.length; i++){
+        var item = menu[i];
+        var str = "";
+        try{
+            if(item.isHeader == "1"){
+                str = "<li class='menu-header'>"+item.name+"</li>";
+                $(parent).append(str);
+                if(item.childMenus != ""){
+                    initMenu(item.childMenus,parent);
+                }
+            }else{
+                item.icon == "" ? item.icon = "&#xe610" : item.icon = item.icon;
+                if(item.childMenus == ""){
+                    str = "<li><a href='"+item.url+"'><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
+                    $(parent).append(str);
+                }else{
+                    str = "<li><a href='"+item.url+"'><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
+                    str +="<ul class='menu-item-child' id='menu-child-"+item.id+"'></ul></li>";
+                    $(parent).append(str);
+                    var childParent = $("#menu-child-"+item.id);
+                    initMenu(item.childMenus,childParent);
+                }
+            }
+        }catch(e){}
+    }
 }
 
 /*

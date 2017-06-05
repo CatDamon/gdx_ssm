@@ -1,8 +1,8 @@
-package ssm.service.systemManage.impl;
+package ssm.service.systemManage.impl.system;
 
 import org.springframework.stereotype.Service;
 import ssm.service.common.impl.BaseServiceImpl;
-import ssm.service.systemManage.UserManageService;
+import ssm.service.systemManage.system.UserManageService;
 import ssm.state.AvailableState;
 import ssm.utils.Page;
 import ssm.utils.PageData;

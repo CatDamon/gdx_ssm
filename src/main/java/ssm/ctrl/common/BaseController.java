@@ -7,7 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
-import ssm.service.systemManage.UserManageService;
+import ssm.entity.User;
+import ssm.service.systemManage.system.UserManageService;
 import ssm.utils.Const;
 import ssm.utils.Page;
 import ssm.utils.PageData;
@@ -89,8 +90,8 @@ public class BaseController{
 	 * 获取会话中的用户对象
 	 * @return
 	 */
-	protected UserManageService getUser(){
-		return (UserManageService)getRequest().getSession().getAttribute(Const.SESSION_USER);
+	protected User getUser(){
+		return (User)getRequest().getSession().getAttribute(Const.SESSION_USER);
 	}
 	
 	protected org.apache.shiro.session.Session getSession(){

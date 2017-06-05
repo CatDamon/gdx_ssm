@@ -391,3 +391,1402 @@ javax.servlet.ServletException: Could not resolve view with name '/login.html' i
 [INFO] [2017-06-0501:29:56][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
 [WARN] [2017-06-0501:29:56][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/images/pre.gif] in DispatcherServlet with name 'mvc'
 [WARN] [2017-06-0501:29:56][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/images/next.gif] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:07:02][org.eclipse.jetty.util.log]Logging initialized @1055ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0510:07:03][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0510:07:03][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0510:07:03][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0510:07:03][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0510:07:03][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0510:07:03][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0510:07:04][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 10:07:04 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0510:07:04][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0510:07:06][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0510:07:06][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:07:06][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:07:06][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:07:07][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:07:07][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0510:07:08][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4256 ms
+[INFO] [2017-06-0510:07:08][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0510:07:08][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 10:07:08 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0510:07:08][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0510:07:08][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0510:07:08][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0510:07:09][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0510:07:09][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1103 ms
+[INFO] [2017-06-0510:07:09][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0510:07:09][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@5f7f2382{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0510:07:09][org.eclipse.jetty.server.Server]Started @7638ms
+[INFO] [2017-06-0510:08:31][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[WARN] [2017-06-0510:08:31][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:08:50][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:08:52][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:243)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy15.selectUserList(Unknown Source)
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1127)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:356)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2502)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:205)
+	... 75 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:306)
+	... 94 more
+[INFO] [2017-06-0510:10:02][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:10:27][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:10:29][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:11:01][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:12:40][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:14:10][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:14:12][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:16:30][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:16:31][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:16:33][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.util.log]Logging initialized @761ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0510:17:28][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0510:17:28][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0510:17:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 10:17:29 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0510:17:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0510:17:31][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0510:17:31][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:17:31][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:17:31][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:17:31][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:17:31][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0510:17:32][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3376 ms
+[INFO] [2017-06-0510:17:32][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0510:17:32][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 10:17:32 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0510:17:32][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0510:17:32][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0510:17:32][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0510:17:33][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0510:17:33][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 925 ms
+[INFO] [2017-06-0510:17:33][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0510:17:33][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@5f7f2382{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0510:17:33][org.eclipse.jetty.server.Server]Started @5901ms
+[INFO] [2017-06-0510:17:39][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[WARN] [2017-06-0510:17:39][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[WARN] [2017-06-0510:17:43][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/test2.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:17:44][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:18:05][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:20:13][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:21:41][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:21:43][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:21:44][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:22:32][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:27:48][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:28:09][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:28:12][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:28:35][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[WARN] [2017-06-0510:28:35][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:28:37][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.util.log]Logging initialized @529ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0510:28:45][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0510:28:45][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0510:28:45][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 10:28:45 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0510:28:46][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0510:28:53][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0510:28:53][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:28:53][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:28:53][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:28:54][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0510:28:54][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0510:28:54][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 8890 ms
+[INFO] [2017-06-0510:28:54][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0510:28:54][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0510:28:54][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 10:28:54 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0510:28:54][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0510:28:55][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0510:28:55][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 989 ms
+[INFO] [2017-06-0510:28:55][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0510:28:55][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@5f7f2382{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0510:28:55][org.eclipse.jetty.server.Server]Started @11230ms
+[INFO] [2017-06-0510:29:03][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[WARN] [2017-06-0510:29:03][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:29:04][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:29:44][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:29:46][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:30:10][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:31:52][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:32:34][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:32:41][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0510:32:43][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:33:01][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:33:03][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:34:48][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:36:25][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0510:44:05][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0510:44:15][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/test2.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0512:11:24][org.eclipse.jetty.util.log]Logging initialized @518ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0512:11:24][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0512:11:25][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0512:11:25][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0512:11:25][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0512:11:25][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0512:11:25][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0512:11:25][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 12:11:25 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0512:11:25][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0512:11:28][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0512:11:28][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0512:11:28][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0512:11:28][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0512:11:28][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0512:11:29][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0512:11:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4474 ms
+[INFO] [2017-06-0512:11:29][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0512:11:29][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0512:11:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 12:11:29 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0512:11:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0512:11:30][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0512:11:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1003 ms
+[INFO] [2017-06-0512:11:30][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0512:11:30][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@46ab18da{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0512:11:30][org.eclipse.jetty.server.Server]Started @6908ms
+[INFO] [2017-06-0512:12:24][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[WARN] [2017-06-0512:12:25][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0512:12:26][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0512:12:26][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 48 more
+[INFO] [2017-06-0514:51:29][org.eclipse.jetty.util.log]Logging initialized @579ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0514:51:30][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0514:51:30][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0514:51:30][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0514:51:30][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0514:51:30][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0514:51:30][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0514:51:30][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 14:51:30 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0514:51:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[WARN] [2017-06-0514:51:31][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Ignored XML validation warning
+org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 75; schema_reference.4: 无法读取方案文档 'http://www.springframework.org/schema/beans/spring-beans-4.2.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:433)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:347)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4166)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4157)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2490)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2187)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:573)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:616)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1773)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:876)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:839)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1480)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1442)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:799)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:540)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at ssm.StartJetty.main(StartJetty.java:33)
+Caused by: java.net.UnknownHostException: www.springframework.org
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1103)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1511)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1439)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:646)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685)
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2175)
+	... 50 more
+[ERROR] [2017-06-0514:51:31][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 75; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:876)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:839)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1480)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1442)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:799)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:540)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at ssm.StartJetty.main(StartJetty.java:33)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 75; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[WARN] [2017-06-0514:51:31][org.eclipse.jetty.webapp.WebAppContext]Failed startup of context o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,UNAVAILABLE}
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 75; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:398)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:876)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:839)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1480)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1442)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:799)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:540)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:452)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at ssm.StartJetty.main(StartJetty.java:33)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 75; cvc-elt.1: 找不到元素 'beans' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1906)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:746)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:379)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:605)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3138)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:428)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 30 more
+[INFO] [2017-06-0514:51:31][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@240237d2{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0514:51:31][org.eclipse.jetty.server.Server]Started @1845ms
+[INFO] [2017-06-0514:56:09][org.eclipse.jetty.util.log]Logging initialized @637ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0514:56:09][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0514:56:10][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0514:56:10][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0514:56:10][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0514:56:10][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0514:56:10][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0514:56:10][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 14:56:10 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0514:56:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0514:56:57][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0514:56:57][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0514:56:57][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0514:56:57][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0514:56:57][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0514:56:58][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0514:56:58][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 48301 ms
+[INFO] [2017-06-0514:56:58][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0514:56:58][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0514:56:58][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 14:56:58 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0514:56:58][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0514:56:59][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0514:56:59][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 965 ms
+[INFO] [2017-06-0514:56:59][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0514:56:59][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@46ab18da{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0514:56:59][org.eclipse.jetty.server.Server]Started @50861ms
+[INFO] [2017-06-0514:59:32][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0514:59:32][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[WARN] [2017-06-0514:59:33][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0514:59:34][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0514:59:34][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:06:09][org.eclipse.jetty.util.log]Logging initialized @561ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:06:09][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:06:10][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:06:10][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:06:10][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:06:10][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:06:10][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:06:10][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:06:10 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:06:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:06:14][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:06:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:06:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:06:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:06:14][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:06:14][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:06:15][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5071 ms
+[INFO] [2017-06-0515:06:15][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:06:15][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:06:15 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:06:15][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:06:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:06:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:06:16][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:06:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1007 ms
+[INFO] [2017-06-0515:06:16][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:06:16][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@46ab18da{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:06:16][org.eclipse.jetty.server.Server]Started @7585ms
+[INFO] [2017-06-0515:06:30][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:06:30][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[WARN] [2017-06-0515:06:30][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:06:32][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[INFO] [2017-06-0515:11:28][org.eclipse.jetty.util.log]Logging initialized @552ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:11:28][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:11:29][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:11:29][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:11:29][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:11:29][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:11:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:11:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:11:29 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:11:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:11:33][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:11:33][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:11:33][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:11:33][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:11:33][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:11:33][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:11:34][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4937 ms
+[INFO] [2017-06-0515:11:34][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:11:34][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:11:34 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:11:34][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:11:34][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:11:34][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:11:35][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:11:35][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1036 ms
+[INFO] [2017-06-0515:11:35][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:11:35][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@4108fa66{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:11:35][org.eclipse.jetty.server.Server]Started @7550ms
+[INFO] [2017-06-0515:13:38][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:13:38][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[WARN] [2017-06-0515:13:38][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:13:40][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:13:40][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:14:16][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:14:16][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:14:31][org.eclipse.jetty.util.log]Logging initialized @571ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:14:31][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:14:32][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:14:32][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:14:32][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:14:32][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:14:32][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:14:32][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:14:32 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:14:32][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:14:36][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:14:36][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:14:36][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:14:36][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:14:36][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:14:36][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:14:37][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5373 ms
+[INFO] [2017-06-0515:14:37][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:14:37][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:14:37 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:14:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:14:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:14:37][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:14:38][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:14:38][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 945 ms
+[INFO] [2017-06-0515:14:38][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:14:38][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@4108fa66{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:14:38][org.eclipse.jetty.server.Server]Started @7806ms
+[INFO] [2017-06-0515:14:52][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:14:52][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[WARN] [2017-06-0515:14:52][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:14:54][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:14:54][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 48 more
+[INFO] [2017-06-0515:15:28][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:15:28][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:15:57][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:15:57][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:17:32][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...
+[WARN] [2017-06-0515:17:32][org.eclipse.jetty.server.HttpChannel]/system/userManage/toUserManage
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1592)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1239)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1561)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1141)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(UserManageCtrl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	... 52 more
+[INFO] [2017-06-0515:18:05][org.eclipse.jetty.util.log]Logging initialized @1550ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:18:05][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:18:06][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:18:06][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:18:06][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:18:06][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:18:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:18:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:18:06 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:18:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:19:03][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:19:04][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:19:04][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:19:04][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:19:04][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:19:04][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:19:05][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 58925 ms
+[INFO] [2017-06-0515:19:05][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:19:05][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:19:05][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:19:05 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:19:05][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:19:05][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:19:06][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1184 ms
+[INFO] [2017-06-0515:19:06][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@4f209819{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:19:06][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@784abd3e{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:19:06][org.eclipse.jetty.server.Server]Started @63100ms
+[INFO] [2017-06-0515:19:53][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:20:05][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:20:05][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:20:05][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[INFO] [2017-06-0515:20:05][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[INFO] [2017-06-0515:20:05][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[INFO] [2017-06-0515:22:18][org.eclipse.jetty.util.log]Logging initialized @676ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:22:18][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:22:19][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:22:19][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:22:19][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:22:19][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:22:19][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:22:19][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:22:19 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:22:19][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:22:22][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:22:22][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:22:22][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:22:22][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:22:22][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:22:22][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:22:23][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4067 ms
+[INFO] [2017-06-0515:22:23][org.eclipse.jetty.ContextHandler.7f9a81e8]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:22:23][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:22:23][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:22:23 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:22:23][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:22:23][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:22:24][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 972 ms
+[INFO] [2017-06-0515:22:24][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@7f9a81e8{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:22:24][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@4108fa66{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:22:24][org.eclipse.jetty.server.Server]Started @6693ms
+[INFO] [2017-06-0515:23:12][org.eclipse.jetty.util.log]Logging initialized @637ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:23:12][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:23:13][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:23:13][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:23:13][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:23:13][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:23:13][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:23:13][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:23:13 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:23:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:23:16][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:23:16][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:23:16][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:23:16][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:23:16][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:23:16][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:23:17][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4505 ms
+[INFO] [2017-06-0515:23:17][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:23:17][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:23:17][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:23:17 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:23:17][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:23:17][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:23:18][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:23:19][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1319 ms
+[INFO] [2017-06-0515:23:19][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@4f209819{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:23:19][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@411c6d44{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:23:19][org.eclipse.jetty.server.Server]Started @7583ms
+[INFO] [2017-06-0515:23:23][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:23:23][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[WARN] [2017-06-0515:24:03][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:24:06][org.eclipse.jetty.util.log]Logging initialized @670ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:24:06][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:24:07][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:24:07][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:24:07][org.eclipse.jetty.server.session]Scavenging every 600000ms
+[INFO] [2017-06-0515:24:07][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:24:07][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:24:07][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:24:07 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:24:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:24:12][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:24:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:24:12][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:24:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:24:13][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:24:13][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:24:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 7142 ms
+[INFO] [2017-06-0515:24:14][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:24:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:24:14 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:24:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:24:14][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:24:14][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:24:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:24:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1170 ms
+[INFO] [2017-06-0515:24:15][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@4f209819{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:24:15][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@36c2b646{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:24:15][org.eclipse.jetty.server.Server]Started @10056ms
+[INFO] [2017-06-0515:24:36][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:24:36][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[ERROR] [2017-06-0515:25:24][ssm.utils.PageData]java.lang.IllegalArgumentException: argument type mismatch
+[WARN] [2017-06-0515:26:03][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:28:05][org.eclipse.jetty.util.log]Logging initialized @669ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] [2017-06-0515:28:06][org.eclipse.jetty.server.Server]jetty-9.4.2.v20170220
+[INFO] [2017-06-0515:28:06][org.eclipse.jetty.server.session]DefaultSessionIdManager workerName=node0
+[INFO] [2017-06-0515:28:06][org.eclipse.jetty.server.session]No SessionScavenger set, using defaults
+[INFO] [2017-06-0515:28:06][org.eclipse.jetty.server.session]Scavenging every 660000ms
+[INFO] [2017-06-0515:28:06][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring root WebApplicationContext
+[INFO] [2017-06-0515:28:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-0515:28:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Mon Jun 05 15:28:06 CST 2017]; root of context hierarchy
+[INFO] [2017-06-0515:28:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [context.xml]
+[INFO] [2017-06-0515:28:10][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-0515:28:10][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:28:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:28:10][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'ShiroRealm' of type [class ssm.common.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:28:11][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker]Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] [2017-06-0515:28:11][org.springframework.jdbc.datasource.DriverManagerDataSource]Loaded JDBC driver: com.mysql.jdbc.Driver
+[INFO] [2017-06-0515:28:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5407 ms
+[INFO] [2017-06-0515:28:12][org.eclipse.jetty.ContextHandler.4f209819]Initializing Spring FrameworkServlet 'mvc'
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization started
+[INFO] [2017-06-0515:28:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Mon Jun 05 15:28:12 CST 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-0515:28:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2017-06-0515:28:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.login()
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toIndex],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.login.LoginCtrl.toIndex()
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/loginOut.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String ssm.ctrl.login.LoginCtrl.loginOut()
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/toLogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> ssm.ctrl.login.LoginCtrl.toLogin()
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/MenuManageCtrl/getMenuJson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object ssm.ctrl.system.menuManage.MenuManageCtrl.getMenuJson()
+[INFO] [2017-06-0515:28:12][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/system/userManage/toUserManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView ssm.ctrl.system.userManage.UserManageCtrl.toUserManage(ssm.utils.Page) throws java.lang.Exception
+[INFO] [2017-06-0515:28:13][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO] [2017-06-0515:28:13][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'mvc': initialization completed in 1234 ms
+[INFO] [2017-06-0515:28:13][org.eclipse.jetty.server.handler.ContextHandler]Started o.e.j.w.WebAppContext@4f209819{/,file:///D:/IdeaProjects/gdx_ssm/target/classes/static/,AVAILABLE}
+[INFO] [2017-06-0515:28:13][org.eclipse.jetty.server.AbstractConnector]Started ServerConnector@36c2b646{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] [2017-06-0515:28:13][org.eclipse.jetty.server.Server]Started @8399ms
+[INFO] [2017-06-0515:28:18][ssm.ctrl.common.BaseController]LoginCtrl toLogin...
+[INFO] [2017-06-0515:28:18][ssm.service.common.impl.BaseServiceImpl]LoginServiceImpl selectUserAll...
+[ERROR] [2017-06-0515:28:18][ssm.utils.PageData]java.lang.IllegalArgumentException: argument type mismatch
+[WARN] [2017-06-0515:28:18][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/home.html] in DispatcherServlet with name 'mvc'
+[INFO] [2017-06-0515:28:20][ssm.ctrl.common.BaseController]UserManageCtrl toUserManage...

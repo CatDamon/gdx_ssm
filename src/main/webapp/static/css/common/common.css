@@ -1,3 +1,29 @@
+/**default*/
+*{
+    font-family: "微软雅黑";
+    font-size:9pt;
+    border:0;
+    margin:0;
+    padding:0;
+}
+body{font-family: '微软雅黑', serif; margin:0 auto;min-width:980px;}
+html{overflow-x:hidden;}
+ul{display:block;margin:0;padding:0;list-style:none;}
+li{display:block;margin:0;padding:0;list-style: none;}
+img{border:0;}
+dl,dt,dd,span{margin:0;padding:0;display:block;color:#333;}
+a{text-decoration:none;color:#000;outline:none;}
+a:hover{color:#00a4ac;text-decoration:none;}
+a:focus {outline: none}
+table{border-collapse:collapse;border-spacing: 0}
+table .
+cite{font-style:normal;}
+h2{font-weight:normal;}
+
+/**table样式，调用bootstrap*/
+/**class="table table-bordered table-hover"*/
+
+
 /*page*/
 .pagin{position:relative;margin-top:10px;padding:0 12px;height: 30px;line-height: 30px;}
 .pagin .blue{color:#056dae;font-style:normal;}
