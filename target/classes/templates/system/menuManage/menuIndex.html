@@ -1,0 +1,54 @@
+<% layout("/common/layout.html"){%>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单管理</title>
+    <script type="text/javascript" src="/static/js/system/menuManage.js"></script>
+</head>
+<body>
+<form class="divPosition">
+    <div class="am-form divgroup">
+        <label>
+            <select name="city" lay-verify="required">
+                <option value="-1">请选择</option>
+                <option value="0">菜单名称</option>
+                <option value="1">上级菜单</option>
+            </select>
+        </label>
+        <div>
+            <input type="text" class="" placeholder="请输入查询条件">
+        </div>
+        <div>
+            <button type="button" class="am-btn am-btn-secondary">查询</button>&nbsp;&nbsp;
+            <button type="button" class="am-btn am-btn-secondary">添加</button>
+        </div>
+    </div>
+
+</form>
+<div class="">
+    <table class="layui-table" lay-skin="row">
+        <thead>
+        <th>菜单名称</th>
+        <th>上级菜单</th>
+        <th>权限性质</th>
+        <th>操作</th>
+        </thead>
+        <tbody>
+        <%for(item in menuList!){%>
+        <tr>
+            <td>${item.per_name}</td>
+            <td>${item.parentname}</td>
+            <td>${item.ismenuorpoint}</td>
+            <td>${item.operateValue}</td>
+        </tr>
+        <%}%>
+        </tbody>
+
+    </table>
+    <div class="pagin">
+        ${page.pageStr}
+    </div>
+</div>
+</body>
+</html>
+<%}%>

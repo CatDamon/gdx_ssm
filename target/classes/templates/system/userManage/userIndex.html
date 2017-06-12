@@ -1,4 +1,4 @@
-<% include("/common/layout.html"){} %>
+<% layout("/common/layout.html"){%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,30 @@
             padding-top:10px;
         }
 
+
     </style>
 </head>
 <body>
-    <div class="divPosition">
-        <table class="table table-bordered table-hover">
+<form class="divPosition">
+    <div class="am-form divgroup">
+        <label>
+            <select name="city" lay-verify="required">
+                <option value="-1">请选择</option>
+                <option value="0">用户名</option>
+            </select>
+        </label>
+        <div>
+            <input type="text" class="" placeholder="请输入查询条件">
+        </div>
+        <div>
+            <button type="button" class="am-btn am-btn-secondary">查询</button>&nbsp;&nbsp;
+            <button type="button" class="am-btn am-btn-secondary">添加</button>
+        </div>
+    </div>
+</form>
+
+    <div >
+        <table class="layui-table" lay-skin="row">
             <thead>
                 <th>用户名</th>
                 <th>可用状态</th>
@@ -36,3 +55,4 @@
     </div>
 </body>
 </html>
+<%}%>

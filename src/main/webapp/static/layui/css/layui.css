@@ -1,9 +1,9 @@
 /**
- 
+
  @Name: layui
  @Author: 贤心
  @Site: http://www.layui.com
- 
+
  */
 
 
@@ -36,7 +36,7 @@ pre{white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; w
   url('../font/iconfont.ttf') format('truetype'),
   url('../font/iconfont.svg#iconfont') format('svg');
 }
-                    
+
 .layui-icon{
   font-family:"layui-icon" !important;
   font-size: 16px;
@@ -123,7 +123,7 @@ a cite{font-style: normal; *cursor:pointer;}
 .layui-input:hover, .layui-textarea:hover{border-color: #D2D2D2 !important;}
 .layui-input:focus, .layui-textarea:focus{border-color: #C9C9C9 !important;}
 .layui-textarea{position: relative; min-height: 100px; height: auto; line-height: 20px; padding: 6px 10px; resize: vertical;}
-.layui-form select, 
+.layui-form select,
 .layui-form input[type=checkbox],
 .layui-form input[type=radio]{display: none;}
 
@@ -139,7 +139,7 @@ a cite{font-style: normal; *cursor:pointer;}
 
 /* 分割块 */.layui-form-mid{position: relative; float: left; display: block; padding: 8px 0; line-height: 20px; margin-right: 10px;}
 /* 警告域 */.layui-form-danger:focus
-,.layui-form-danger+.layui-form-select .layui-input{border: 1px solid #FF5722 !important;}
+         ,.layui-form-danger+.layui-form-select .layui-input{border: 1px solid #FF5722 !important;}
 
 
 /* 下拉选择 */.layui-form-select{position: relative;}
@@ -189,7 +189,7 @@ a cite{font-style: normal; *cursor:pointer;}
 .layui-form-pane .layui-input:hover, .layui-form-pane .layui-textarea:hover{border-color: #e6e6e6 !important;}
 .layui-form-pane .layui-input:focus, .layui-form-pane .layui-textarea:focus{border-color: #e6e6e6 !important;}
 .layui-form-pane .layui-form-checkbox{margin: 0 0 10px 10px;}
-.layui-form-pane .layui-form-switch, 
+.layui-form-pane .layui-form-switch,
 .layui-form-pane .layui-form-radio{margin-left: 10px; }
 
 /** 富文本编辑器 **/
@@ -221,7 +221,7 @@ a cite{font-style: normal; *cursor:pointer;}
 /** 表格简单修饰 **/
 .layui-table{width: 100%; margin: 10px 0;}
 .layui-table thead tr{background-color: #f2f2f2;}
-.layui-table th, 
+.layui-table th,
 .layui-table td{padding: 6px 10px; min-height: 20px; line-height: 20px; border: 1px solid #d2d2d2; font-size: 14px; font-weight: 400;}
 .layui-table th{padding: 10px;}
 .layui-table tr{background-color: #fff;}
@@ -281,7 +281,7 @@ a cite{font-style: normal; *cursor:pointer;}
 /** 树组件 **/
 .layui-tree{line-height: 26px;}
 .layui-tree li{text-overflow: ellipsis; overflow:hidden; white-space: nowrap;}
-.layui-tree li a, 
+.layui-tree li a,
 .layui-tree li .layui-tree-spread{display: inline-block; vertical-align: top; height: 26px; *display: inline; *zoom:1; cursor: pointer;}
 .layui-tree li a{font-size: 0;}
 .layui-tree li a i{font-size: 16px;}

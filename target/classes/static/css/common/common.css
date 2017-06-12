@@ -23,6 +23,19 @@ h2{font-weight:normal;}
 /**table样式，调用bootstrap*/
 /**class="table table-bordered table-hover"*/
 
+/**下拉框样式*/
+.divPosition {
+    padding-top: 10px;
+}
+.divgroup{
+    display:-webkit-box;
+
+}
+label + div + div,label + div{
+    margin-left:10px;
+    width:250px;
+}
+
 
 /*page*/
 .pagin{position:relative;margin-top:10px;padding:0 12px;height: 30px;line-height: 30px;}

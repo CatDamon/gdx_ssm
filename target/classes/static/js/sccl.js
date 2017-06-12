@@ -77,7 +77,7 @@ function addIframe(cur){
 		addTab($(".content-tab.active"));
 	}else{ //已有改选项卡，点击菜单关闭原来的选项卡，再打开一个新的
         //$(".tab-nav-content").on("click", ".content-tab i", closePage);
-        $(".tab-nav-content i").click();
+        //$(".tab-nav-content i").click();
 
 
 	}
@@ -404,7 +404,8 @@ $(function(){
 	var menu = [{"id":"1","name":"主菜单","parentId":"0","url":"","icon":"","order":"1","isHeader":"1","childMenus":[
 					{"id":"3","name":"系统管理","parentId":"1","url":"","icon":"&#xe604;","order":"1","isHeader":"0","childMenus":[
 						{"id":"4","name":"人员管理","parentId":"3","url":"/system/userManage/toUserManage","icon":"","order":"1","isHeader":"0","childMenus":""},
-						{"id":"5","name":"角色管理","parentId":"3","url":"test2.html","icon":"","order":"1","isHeader":"0","childMenus":""}
+						{"id":"5","name":"角色管理","parentId":"3","url":"test2.html","icon":"","order":"1","isHeader":"0","childMenus":""},
+                        {"id":"5","name":"菜单管理","parentId":"3","url":"/system/MenuManageCtrl/toMenuIndex","icon":"","order":"1","isHeader":"0","childMenus":""}
 					]},
 					{"id":"6","name":"订单管理","parentId":"1","url":"","icon":"&#xe602;","order":"1","isHeader":"0","childMenus":[
 						{"id":"7","name":"已付款","parentId":"6","url":"home3.html","icon":"","order":"1","isHeader":"0","childMenus":""},

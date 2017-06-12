@@ -55,9 +55,6 @@ public class LoginCtrl extends BaseController {
 		String userName = userData.getString("userName");
 		String userPassword = userData.getString("password");
 
-
-
-
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(userName,userPassword); 
 		try { 
@@ -68,7 +65,6 @@ public class LoginCtrl extends BaseController {
 			if(loginData != null){
 				this.getSession().setAttribute(Const.SESSION_USER,loginData.convertToBean(User.class));
 			}
-
 
 		} catch (AuthenticationException e) { 
 			map.put("message", "身份验证失败");

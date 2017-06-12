@@ -43,6 +43,7 @@ public class MyBeetlGroupUtilConfiguration extends BeetlGroupUtilConfiguration {
 
     // 设置共享变量
     if (sharedVars != null) {
+      sharedVars.put("layer","");
       groupTemplate.setSharedVars(sharedVars);
     }
   }
