@@ -26,13 +26,20 @@ public class MenuManageCtrl extends BaseController {
 	@RequestMapping("/toMenuIndex")
 	public ModelAndView toMenuIndex(Page page) throws Exception {
 		logger.info("MenuManageCtrl toMenuIndex...");
-		ModelAndView mv = new ModelAndView("/system/menuManage/menuIndex.html");
+		ModelAndView mv = new ModelAndView("/system/menuManage/menuIndex2.html");
 
 		mv.addObject("menuList" ,(List<PageData>)this.menuManageService.selectMenu(page));
 		return mv;
 	}
 
-	/***/
+	/**跳转到添加菜单页*/
+	@RequestMapping("/toAddMenuPage")
+	public ModelAndView toAddMenuPage()throws Exception{
+		logger.info("MenuManageCtrl toAddMenuPage...");
+		ModelAndView mv = new ModelAndView("/system/menuManage/addMenu.html");
+
+		return mv;
+	}
 
 
 	/**动态生成用户菜单*/

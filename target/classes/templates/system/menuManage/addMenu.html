@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加菜单页面</title>
+</head>
+<body>
+<form action="" class="am-form" id="addMenuForm">
+    <fieldset>
+        <div class="am-form-group">
+            <label>菜单名称：</label>
+            <input type="text" requried placeholder="请输入菜单名称" />
+        </div>
+        <div class="am-form-group" style="display: inline-blockd;">
+            <h3>是否是根菜单目录：<sup class="am-text-danger">*</sup></h3>
+            <label class="am-radio" >
+                <input type="radio" name="radio10" value="male" data-am-ucheck required>是 
+            </label>
+            <label class="am-radio">
+                <input type="radio" name="radio10" value="female" data-am-ucheck> 否
+            </label>
+            
+            <div>
+        <div class="am-form-group">
+            <label for="doc-select-1">下拉多选框</label>
+            <select id="doc-select-1">
+                <option value="option1">选项一...</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三........</option>
+            </select>
+            <span class="am-form-caret"></span>
+        </div>
+
+
+    </fieldset>
+
+</form>
+</body>
+</html>
+<script>
+    $(function() {
+        $("input[type='checkbox'], input[type='radio']").uCheck();
+    });
+</script>
