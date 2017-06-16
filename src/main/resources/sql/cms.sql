@@ -34,12 +34,13 @@ DROP TABLE IF EXISTS ry_permission;
 CREATE TABLE ry_permission (
   per_id	VARCHAR(32) NOT NULL COMMENT	'权限ID',
   per_name	VARCHAR(50) DEFAULT NULL COMMENT	'权限名',
-  perentId	VARCHAR(32) DEFAULT NULL COMMENT	'所属上级权限ID',
+  perentid	VARCHAR(32) DEFAULT NULL COMMENT	'所属上级权限ID',
+  perentname	VARCHAR(50) DEFAULT NULL COMMENT	'所属上级权限名称',
   url       VARCHAR(255) DEFAULT NULL COMMENT '菜单链接',
   icon      VARCHAR(100) DEFAULT NULL  COMMENT '图标',
-  orders     VARCHAR(50) DEFAULT NULL,
-  isheader      VARCHAR(50) DEFAULT NULL,
-  ismenuorpoint  INT DEFAULT 0 COMMENT '0代表菜单权限,1代表页面权限点',
+  orders     INT DEFAULT 0 COMMENT "所在目录顺序",
+  isheader      INT DEFAULT 0 COMMENT '0表示根目录,1表示非根目录',
+  ismenuorpoint      INT DEFAULT 0 COMMENT '0代表菜单权限,1代表页面权限点',
   PRIMARY KEY (per_id)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT '权限表';
 

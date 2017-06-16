@@ -24,18 +24,22 @@ function validateNoNull(formId){
             nullPass = false;
             $(o).addClass("norequried");
             $(o).css("border-color","#FF3366");
+
             if(o.tagName == "SELECT"){
-                $(o).prev().addClass("norequried");
+                $(o).prev().addClass("norequried")
                 $(o).prev().css("border-color","#FF3366");
             }
             if(o.tagName == "TEXTAREA"){
                 $(o).addClass("norequried");
                 $(o).css("border-color","#FF3366");
+
             }
         }
     }
     if(!nullPass){
         return false;
+    }else{
+        return true;
     }
 }
 /**

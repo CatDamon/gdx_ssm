@@ -11,7 +11,8 @@ html{overflow-x:hidden;}
 ul{display:block;margin:0;padding:0;list-style:none;}
 li{display:block;margin:0;padding:0;list-style: none;}
 img{border:0;}
-dl,dt,dd,span{margin:0;padding:0;display:block;color:#333;}
+dl,dt,dd{margin:0;padding:0;display:block;color:#333;}
+.pagenxt,.pagepre {margin:0;padding:0;display:block;color:#333;}
 a{text-decoration:none;color:#000;outline:none;}
 a:hover{color:#00a4ac;text-decoration:none;}
 a:focus {outline: none}
@@ -60,3 +61,16 @@ label + div + div,label + div{
 .pagepre-disable{background-image:url(/static/image/pre-disable.gif);}
 .pagenxt-disable{background-image:url(/static/image/next-disable.gif);}
 
+/**标题*/
+.com-title{
+    border-bottom: 2px solid #0a6999;
+    font-size: 16px;
+    color: #0a6999;
+    height: auto;
+}
+
+/**ztree css*/
+.ztree li span.button.diy02_ico_open{margin-right:2px; background: url(img/diy/1_open.png) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.diy02_ico_close{margin-right:2px; background: url(img/diy/1_close.png) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+.ztree li span.button.diy03_ico_docu{margin-right:2px; background: url(img/diy/3.png) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}

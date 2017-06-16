@@ -2,26 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="023cc519-303a-48c1-8c07-e73e308c1fd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/awesomeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/line_conn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/metro.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/metro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/1_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/1_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/line_conn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ssm/state/IsHeaderState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ssm/state/IsMenuOrPointState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/lib/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/lib/jquery-1.8.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/awesomeStyle/awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/awesomeStyle/awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/awesomeStyle/fa.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/metroStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/zTreeStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.excheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.excheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.exedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.exedit.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.exhide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/ztree/js/jquery.ztree.exhide.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/system/menuManage/menuIndex2.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ssm/ctrl/system/menuManage/MenuManageCtrl.class" afterPath="$PROJECT_DIR$/target/classes/ssm/ctrl/system/menuManage/MenuManageCtrl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ssm/service/systemManage/impl/system/MenuManageServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/ssm/service/systemManage/impl/system/MenuManageServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ssm/service/systemManage/system/MenuManageService.class" afterPath="$PROJECT_DIR$/target/classes/ssm/service/systemManage/system/MenuManageService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gdx_ssm.iml" afterPath="$PROJECT_DIR$/gdx_ssm.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/ssm.log" afterPath="$PROJECT_DIR$/logs/ssm.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sql/cms.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/cms.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/css/common/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/common/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/systemManage/menuManage/MenuManageMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sql/cms.sql" afterPath="$PROJECT_DIR$/target/classes/sql/cms.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/common/common.css" afterPath="$PROJECT_DIR$/target/classes/static/css/common/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/common/common.js" afterPath="$PROJECT_DIR$/target/classes/static/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/system/menuManage.js" afterPath="$PROJECT_DIR$/target/classes/static/js/system/menuManage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/common/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/common/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/common/layout.html" afterPath="$PROJECT_DIR$/target/classes/templates/common/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/system/menuManage/addMenu.html" afterPath="$PROJECT_DIR$/target/classes/templates/system/menuManage/addMenu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/system/menuManage/menuIndex.html" afterPath="$PROJECT_DIR$/target/classes/templates/system/menuManage/menuIndex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/system/userManage/userIndex.html" afterPath="$PROJECT_DIR$/target/classes/templates/system/userManage/userIndex.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,19 +87,12 @@
       <file leaf-file-name="menuIndex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuIndex2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="429">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,8 +100,8 @@
       <file leaf-file-name="menuManage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="270">
+              <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -68,30 +110,48 @@
       <file leaf-file-name="MenuManageCtrl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="233" column="42" lean-forward="false" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addMenu.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="441">
+              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuManageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuManageServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/common/impl/BaseServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1375#1376#0" expanded="false" />
+                <element signature="e#1409#1410#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,10 +160,12 @@
       <file leaf-file-name="MenuManageMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="189">
+              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
               <folding>
-                <marker date="1496766069098" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
+                <marker date="1497494546132" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
+                <marker date="1497494546132" expanded="true" signature="371:502" ph="insert into ry_permission... " />
+                <marker date="1497494546132" expanded="true" signature="371:638" ph="insert into ry_permission... " />
               </folding>
             </state>
           </provider>
@@ -112,18 +174,8 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="1260">
               <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -132,18 +184,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+            <state relative-caret-position="294">
+              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metroStyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/metroStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="34" column="82" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -152,8 +214,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/common/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="462">
+              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -162,8 +224,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/common/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="672">
+              <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -188,7 +250,13 @@
       <find>type=&quot;text&quot;</find>
       <find>sharedVars</find>
       <find>useFileMappedBuffer</find>
+      <find>tree</find>
+      <find>config.closeBtn</find>
+      <find>icon</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -199,6 +267,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/context.xml" root0="SKIP_INSPECTION" />
   </component>
@@ -207,7 +276,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ssm/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/cms.sql" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/MenuManageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/MenuManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/UserManageService.java" />
@@ -221,29 +289,33 @@
         <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/layui/css/layui.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/exception/SystemCtrlException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/exception/SystemServiceException.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/sccl.js" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/StartJetty.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/common/MyBeetlGroupUtilConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/common/error.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/errorPage/error500.html" />
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/common/common.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/cms.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/state/IsHeaderState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/state/IsMenuOrPointState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/layui/lay/modules/tree.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/common/common.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
       </list>
     </option>
   </component>
@@ -268,8 +340,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="738" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -332,8 +406,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,7 +464,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ztree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,11 +498,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
+              <option name="myItemId" value="ztree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,15 +528,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menuManage" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +552,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,13 +569,14 @@
       <recent name="ssm.service.systemManage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\ztree\css" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\ztree\css\zTreeStyle\img" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\lib" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\ztree" />
       <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\templates\system\menuManage" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\errorPage" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\templates\common" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\resources\mybatis\systemManage\menuManage" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ssm.state" />
       <recent name="ssm.exception" />
       <recent name="ssm.service.systemManage.impl" />
       <recent name="ssm.ctrl.system.menuManage" />
@@ -958,21 +1033,32 @@
       <workItem from="1496764943324" duration="12372000" />
       <workItem from="1496939955288" duration="16463000" />
       <workItem from="1497233649088" duration="27214000" />
+      <workItem from="1497361100468" duration="37835000" />
+      <workItem from="1497577114835" duration="11347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85795000" />
+    <option name="totallyTimeSpent" value="134977000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="738" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24394463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2946128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -982,23 +1068,24 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34602076" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1764706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21717171" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17508417" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3529412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35185185" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25267994" sideWeight="0.48195878" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24502297" sideWeight="0.51557094" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.47643098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25567323" sideWeight="0.52356905" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25267994" sideWeight="0.51804125" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1006,7 +1093,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1017,11 +1103,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="userData" />
+        <watch expression="IsHeaderState.GML.getType_code().equals(StringUtil.isNotBlank(&quot;isheader&quot;))" />
+        <watch expression="(IsMenuOrPointState.CDQX.getType_code().equals(StringUtil.isNotBlank(pageData.getString(&quot;ismenuorpoint&quot;)))" />
+        <watch expression="(IsMenuOrPointState.CDQX.getType_code().equals(pageData.getString(&quot;ismenuorpoint&quot;)) " />
+        <watch expression="IsMenuOrPointState.CDQX.getType_code().equals(pageData.getString(&quot;ismenuorpoint&quot;))" />
+        <watch expression="IsHeaderState.GML.getType_code().equals(pageData.getString(&quot;isheader&quot;))" />
+        <watch expression="!(IsMenuOrPointState.CDQX.getType_code().equals(pageData.getString(&quot;ismenuorpoint&quot;)) &amp;&amp; IsHeaderState.GML.getType_code().equals(pageData.getString(&quot;isheader&quot;)))" />
       </configuration>
     </watches-manager>
   </component>
@@ -1030,286 +1122,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE-sources.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Hierarchy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Priority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="750" column="0" lean-forward="false" selection-start-line="750" selection-start-column="0" selection-end-line="750" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="2034" column="0" lean-forward="false" selection-start-line="2034" selection-start-column="0" selection-end-line="2034" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.2.RELEASE/spring-webmvc-4.0.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/HttpEntityMethodProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.2.RELEASE/spring-web-4.0.2.RELEASE-sources.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar!/org/apache/commons/logging/impl/Log4JLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.2.RELEASE/spring-web-4.0.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/login/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="70" column="41" lean-forward="false" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="445" column="0" lean-forward="true" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/UserManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="504">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="85" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/exception/SystemServiceException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/state/AvailableState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        <state relative-caret-position="49">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/exception/SystemCtrlException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/state/IsMenuOrPointState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state relative-caret-position="350">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/state/IsHeaderState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/cms.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="41" column="58" lean-forward="false" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/assets/css/amazeui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="2380" column="26" lean-forward="false" selection-start-line="2380" selection-start-column="15" selection-end-line="2380" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/StartJetty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/ibeetl/beetl/2.7.11/beetl-2.7.11-sources.jar!/org/beetl/ext/spring/BeetlGroupUtilConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/common/MyBeetlGroupUtilConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/errorPage/error404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/errorPage/error500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.2.RELEASE/spring-webmvc-4.0.2.RELEASE-sources.jar!/org/springframework/web/servlet/handler/SimpleMappingExceptionResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/sccl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="407" column="104" lean-forward="false" selection-start-line="407" selection-start-column="70" selection-end-line="407" selection-end-column="104" />
-          <folding>
-            <marker date="1496767650768" expanded="true" signature="1895:1903" ph="&amp;##xe617;" />
-            <marker date="1496767650768" expanded="true" signature="11070:11078" ph="&amp;##xe60b;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="93">
+          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1322,103 +1170,324 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/webdefault.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.4.2.v20170220/jetty-util-9.4.2.v20170220-sources.jar!/org/eclipse/jetty/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="185" column="24" lean-forward="false" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="494" column="26" lean-forward="false" selection-start-line="494" selection-start-column="26" selection-end-line="494" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://D:/java/src.zip!/java/lang/Exception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="233" column="42" lean-forward="false" selection-start-line="233" selection-start-column="42" selection-end-line="233" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="-298">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rebel.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/exception/SystemServiceException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/common/common.css">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="104">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
         </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="316" column="0" lean-forward="false" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/12.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/3.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="189">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <marker date="1496766069098" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
+            <marker date="1497494546132" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
+            <marker date="1497494546132" expanded="true" signature="371:502" ph="insert into ry_permission... " />
+            <marker date="1497494546132" expanded="true" signature="371:638" ph="insert into ry_permission... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="966">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1490373612760" expanded="true" signature="3352:3505" ph="..." />
+            <marker date="1490373612760" expanded="true" signature="3773:3816" ph="..." />
+            <marker date="1490373612760" expanded="true" signature="20506:20514" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/common/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
+            <element signature="e#1409#1410#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/lib/jquery-1.8.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/lib/jquery-1.4.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/assets/js/amazeui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2176">
+          <caret line="6694" column="6" lean-forward="false" selection-start-line="6694" selection-start-column="6" selection-end-line="6694" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/0.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/1.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/9.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/images/face/39.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/line_conn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/metro.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/awesomeStyle/img/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/common/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/common/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="462">
+          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/img/metro.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/diy/4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/metro.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/metro.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/zTreeStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+        <state relative-caret-position="296">
+          <caret line="87" column="109" lean-forward="true" selection-start-line="87" selection-start-column="109" selection-end-line="87" selection-end-column="109" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/metroStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
+        <state relative-caret-position="105">
+          <caret line="34" column="82" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/lay/modules/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="429">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -15,4 +15,7 @@ public interface MenuManageService {
 
     /**查询全部权限*/
     public List<PageData> selectMenu(Page page)throws Exception;
+
+    /**保存菜单*/
+    public void saveMenu(PageData pageData) throws Exception;
 }

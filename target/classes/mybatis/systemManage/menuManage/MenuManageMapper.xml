@@ -5,4 +5,27 @@
 	<select id="selectMenulistPage" parameterType="page" resultType="pd">
 		select * from ry_permission
 	</select>
+
+	<!-- 保存菜单 -->
+	<insert id="saveMenu" parameterType="pd">
+		insert into ry_permission(
+			per_id,
+			per_name,
+			perentid,
+			url,
+			orders,
+			isheader,
+			perentname,
+			ismenuorpoint
+		)values(
+			#{per_id},
+			#{per_name},
+			#{perentid},
+			#{url},
+			#{orders},
+			#{isheader},
+			#{perentname},
+			#{ismenuorpoint}
+		)
+	</insert>
 </mapper>
