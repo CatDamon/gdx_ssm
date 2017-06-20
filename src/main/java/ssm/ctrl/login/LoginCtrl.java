@@ -28,7 +28,7 @@ public class LoginCtrl extends BaseController {
 	private LoginService loginService;
 	
 	
-	@RequestMapping("/loginOut.do")
+	@RequestMapping("/loginOut")
 	public String loginOut() {
 		//shiro销毁登录
 		Subject subject = SecurityUtils.getSubject();

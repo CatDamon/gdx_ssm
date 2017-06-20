@@ -3,12 +3,11 @@ package ssm.ctrl.common;
 
 import org.apache.shiro.SecurityUtils;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
+import ssm.StartJetty;
 import ssm.entity.User;
-import ssm.service.systemManage.system.UserManageService;
 import ssm.utils.Const;
 import ssm.utils.Page;
 import ssm.utils.PageData;
@@ -18,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 public class BaseController{
-	public static final Logger logger = LoggerFactory.getLogger(BaseController.class);
+	public static final Logger logger = StartJetty.logger;
 
 	private static final long serialVersionUID = 6357869213649815390L;
 	

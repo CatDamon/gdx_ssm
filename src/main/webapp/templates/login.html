@@ -56,7 +56,11 @@
     </div>
     
 
-    <script>
+    <script language="JavaScript">
+		/**页面session过期时候自动刷新整个父窗口*/
+		if(window != top){
+		    top.location.href = location.href;
+		}
 		
 		$(function(){
 			 $("#dl").on("click",function(){

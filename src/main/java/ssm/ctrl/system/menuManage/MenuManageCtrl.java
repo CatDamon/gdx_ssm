@@ -1,8 +1,10 @@
 package ssm.ctrl.system.menuManage;
 
+import org.apache.ibatis.reflection.SystemMetaObject;
 import org.omg.CORBA.OBJECT_NOT_EXIST;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
@@ -44,6 +46,7 @@ public class MenuManageCtrl extends BaseController {
 		Map<String, Object> map = new HashMap<String, Object>();
 		PageData pd = this.getPageData();
 		try {
+			//保存权限
 			this.menuManageService.saveMenu(pd);
 		} catch (Exception e) {
 			map.put("error",e.getMessage());
@@ -51,6 +54,50 @@ public class MenuManageCtrl extends BaseController {
 		}
 		return map;
 	}
+
+	/**生成菜单权限树*/
+	@RequestMapping("/returnZtreeData")
+	@ResponseBody
+	public Map<String, Object> returnZtreeData(){
+		logger.info("MenuManageCtrl returnZtreeData...");
+		Map<String, Object> map = new HashMap<String, Object>();
+		try {
+			String data = this.menuManageService.returnZtreeData();
+			map.put("data",data);
+		} catch (Exception e) {
+			map.put("error","加载权限树失败!请联系管理员进行操作");
+			e.printStackTrace();
+		}
+		return map;
+	}
+
+	/**ztree父级目录异步加载子目录*/
+	@RequestMapping(value = "/loadSonMenu",produces = {"text/json;charset=UTF-8"})
+	@ResponseBody
+	public Object loadSonMenu(){
+		logger.info("MenuManageCtrl loadSonMenu...");
+		PageData pd = this.getPageData();
+		String data = null;
+        try {
+            data = this.menuManageService.getSonMenu(pd);
+        } catch (Exception e) {
+            data = e.getMessage();
+            e.printStackTrace();
+        }
+        if(data == null){
+            data = "数据加载异常!";
+        }
+        return data;
+	}
+
+	/**修改菜单名称和顺序号*/
+	@RequestMapping("/editPer")
+    @ResponseBody
+	public Map<String, Object> editPer(@RequestParam String per_id, @RequestParam String new_per_name){
+	    logger.info("MenuManageCtrl editPer...");
+	    System.out.println(per_id + "," + new_per_name);
+	    return null;
+    }
 
 
 	/**动态生成用户菜单*/

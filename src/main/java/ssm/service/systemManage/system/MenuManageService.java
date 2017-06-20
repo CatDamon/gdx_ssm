@@ -18,4 +18,10 @@ public interface MenuManageService {
 
     /**保存菜单*/
     public void saveMenu(PageData pageData) throws Exception;
+
+    /**返回权限目录树ztree*/
+    public String returnZtreeData() throws Exception;
+
+    /**根据ID查询该权限下所有目录*/
+    public String getSonMenu(PageData pageData) throws Exception;
 }

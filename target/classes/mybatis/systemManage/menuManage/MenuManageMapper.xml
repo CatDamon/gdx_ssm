@@ -11,21 +11,58 @@
 		insert into ry_permission(
 			per_id,
 			per_name,
-			perentid,
+		<if test="parentid != null and parentid != ''">
+			parentid,
+		</if>
 			url,
 			orders,
+		<if test="isheader != null and isheader != ''">
 			isheader,
-			perentname,
+		</if>
+		<if test="parentname != null and parentname != ''">
+			parentname,
+		</if>
 			ismenuorpoint
 		)values(
 			#{per_id},
 			#{per_name},
-			#{perentid},
+		<if test="parentid != null and parentid != ''">
+			#{parentid},
+		</if>
 			#{url},
 			#{orders},
+		<if test="isheader != null and isheader != ''">
 			#{isheader},
-			#{perentname},
+		</if>
+		<if test="parentname != null and parentname != ''">
+			#{parentname},
+		</if>
 			#{ismenuorpoint}
 		)
 	</insert>
+
+	<!-- 查询所有菜单根目录 -->
+	<select id="returnZtreeMenuRootData" parameterType="pd"  resultType="pd">
+		select
+			*
+		from
+			ry_permission
+		where
+			isheader = #{isheader}
+		and
+			ismenuorpoint = #{ismenuorpoint}
+		order by orders asc
+	</select>
+
+
+	<!-- 根据权限id查询所有自权限 -->
+	<select id="findSonMenu" parameterType="pd" resultType="pd">
+		select
+			*
+		from
+			ry_permission
+		where
+			parentid = #{id}
+		order by orders asc
+	</select>
 </mapper>

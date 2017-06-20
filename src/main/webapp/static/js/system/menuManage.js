@@ -16,6 +16,11 @@ $(function(){
             });
             return false;
         }
+        //校验如果上级目录非父目录类型,则提示不能提交
+        if("false" === $("input[name=isheaderTest]").val()){
+            layer.msg("选择的目录非父目录类型,请重新选择!");
+            return false;
+        }
         //二次弹框
         layer.confirm('确定要保存吗?', {icon: 3, title:'提示'}, function(index){
             $.ajax({
@@ -30,7 +35,7 @@ $(function(){
                         //添加成功
                         layer.msg("添加权限成功");
                         //此处重新生成菜单树
-
+                        initMenuTree();
 
                     }
 
@@ -52,6 +57,7 @@ function isMenuOrPorint(value){
     if("0" === value){
         $(".com-isHeaderDiv").show("slow");
     }else{
+        layer.msg("请从右侧树选择上级菜单!");
         $(".com-isHeaderDiv").hide("slow");
     }
 }
@@ -59,42 +65,111 @@ function isMenuOrPorint(value){
 function isHeader(value){
     //0是根目录,1是非根目录
     if("0"===value){
-        //无需选择上级菜单
-
+        //清空上级目录值
+        $("input[name=parentname]").val("");
+        $("input[name=parentid]").val("");
+        $("input[name=isheaderTest]").val("");
     }else{
-
+        layer.msg("请从右侧树选择上级菜单!");
     }
 }
 
 
 
 function initMenuTree(){
+    $("#treeDemo").innerHTML = "";
     var zTreeObj;
-// zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
     var setting = {
         view: {
             selectedMulti: true
         },
-        check: {
+        async:{
+            enable:true,
+            url:"/system/MenuManageCtrl/loadSonMenu",
+            autoParam:["id","name"]
+        },
+        /*check: {
             enable: true,
             chkStyle: "checkbox",
-            chkboxType: { "Y": "p", "N": "s" }
-        },
+            chkDisabledInherit: true,
+            chkboxType: { "Y": "ps", "N": "ps" }
+        },*/
         data: {
             simpleData: {
                 enable: true
             }
         },
+        edit: {
+            enable: true,
+            editNameSelectAll: true,
+            removeTitle: "删除节点",
+            renameTitle: "编辑节点名称",
+            showRemoveBtn: true,
+            showRenameBtn: true
+        },
         callback: {
+            onClick:zTreeOnClick,
+            beforeAsync: zTreeBeforeAsync,
+            onAsyncSuccess:zTreeOnAsyncSuccess,
+            onRename: zTreeOnRename
         }
     };
-// zTree 的数据属性，深入使用请参考 API 文档（zTreeNode 节点数据详解）
-    var zNodes = [
-        {name:"test1", open:true, children:[
-            {name:"test1_1"}, {name:"test1_2"}]},
-        {name:"test2", open:true, children:[
-            {name:"test2_1"}, {name:"test2_2"}]}
-    ];
-    zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    var zNodes ;
+    $.ajax({
+        url: "/system/MenuManageCtrl/returnZtreeData",
+        type: "post",
+        datatype:"json",
+        success: function (data) {
+            if(data == null || data == ''){
+                layer.msg(data.error);
+                return false;
+            }else{
+                zNodes = data.data;
+                $.fn.zTree.init($("#treeDemo"), setting, eval('(' + zNodes + ')')); //zNodes需要 转换成json对象
+            }
+        }
+    })
 }
 
+/**鼠标点击节点前触发事件,判断该点击节点是否是父节点*/
+function zTreeBeforeAsync(treeId, treeNode) {
+    return treeNode.isParent;
+};
+
+/**异步请求成功调用的方法*/
+function zTreeOnAsyncSuccess(event, treeId, treeNode, msg) {
+    if("undefined" === msg){
+        return false;
+    }
+};
+
+/**点击菜单时候把对应的id和名称赋值给input文本框*/
+function zTreeOnClick(event, treeId, treeNode) {
+    $("input[name=parentname]").val(treeNode.name);
+    $("input[name=parentid]").val(treeNode.id);
+    $("input[name=isheaderTest]").val(treeNode.isParent);
+};
+
+
+
+/**给树节点更改名字后触发的函数*/
+function zTreeOnRename(event, treeId, treeNode, isCancel) {
+    var treeObject =  $.fn.zTree.getZTreeObj(treeId);
+    $.ajax({
+        url:"/system/MenuManageCtrl/editPer",
+        type:"post",
+        datatype:"json",
+        data:{
+            "per_id":treeNode.id,
+            "new_per_name":treeNode.name
+        },
+        success:function (data) {
+            if(data.error != null || data.error != ''){
+                layer.msg(data.error);
+                treeObject.cancelEditName();
+            }else{ //修改成功
+
+            }
+        }
+    });
+}

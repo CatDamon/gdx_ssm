@@ -1,10 +1,17 @@
 package ssm;
 
-import com.sun.org.apache.bcel.internal.util.ClassPath;
+
+
+import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.classic.joran.JoranConfigurator;
+import ch.qos.logback.core.joran.spi.JoranException;
+import ch.qos.logback.core.util.StatusPrinter;
 import jdk.internal.org.xml.sax.SAXException;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,9 +21,10 @@ import java.io.IOException;
  * 2017年3月13日
  * */
 public class StartJetty {
-	
-	public static void main(String[] args) {  
-        try {  
+
+    public static final Logger logger = LoggerFactory.getLogger(StartJetty.class);
+	public static void main(String[] args) {
+        try {
             // 服务器的监听端口  
             Server server = new Server(8080);  
             // 关联一个已经存在的上下文  

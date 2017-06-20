@@ -15,9 +15,12 @@
        }
 
         .com-menudiv{
+            position: relative;
+            top:15px;
+            left:10px;
             margin-left: 10px;
             width: 50%;
-            flex:1d;
+            flex:1;
         }
         .com-buttonpositon{
             text-align: center;
@@ -28,14 +31,12 @@
     </style>
 </head>
 <body>
-<div style="display: flex">
-    <div class="com-leftdiv">
-
+<div style="display: flex;">
+    <div class="com-leftdiv" >
         <!--<button type="button" class="am-btn am-btn-secondary addMenu">添加菜单</button>-->
         <div class="com-title">添加权限</div>
         <form action="" class="am-form" id="addMenuForm">
             <fieldset>
-
                 <div class="am-form-group">
                     <label>权限名称：</label>
                     <input type="text" name="per_name"  requried placeholder="请输入权限名称" />
@@ -53,31 +54,27 @@
                         权限点
                     </label>
                 </div>
-
                 <div class="com-isHeaderDiv">
-                <label>是否是根目录：</label>
+                <label>是否是父级目录：</label>
                 <div class="am-radio">
                     <label>
-                        <input type="radio" name="isheader"  value="${@ssm.state.IsHeaderState.GML.getType_code()}" checked>
+                        <input type="radio" name="isheader" onclick="isHeader(this.value)"  value="${@ssm.state.IsHeaderState.GML.getType_code()}" checked>
                         是
                     </label>
                 </div>
                 <div class="am-radio">
                     <label>
-                        <input type="radio" name="isheader"  value="${@ssm.state.IsHeaderState.FGML.getType_code()}" >
+                        <input type="radio" name="isheader" onclick="isHeader(this.value)"  value="${@ssm.state.IsHeaderState.FGML.getType_code()}" >
                         否<span style="color:red;display:-webkit-inline-box;">(需要选择上级目录)</span>
                     </label>
                 </div>
                 </div>
-                <div class="am-form-group">
                     <label>上级目录：</label>
-                    <input type="text"  name="perentname" placeholder="请选择上级菜单" readonly/>
-                    <input type="hidden"  name="perentid"  />
-                </div>
-                <div class="am-form-group">
+                    <input type="text"  name="parentname" placeholder="请选择上级菜单" readonly/>
+                    <input type="hidden"  name="parentid"  />
+                    <input type="hidden" name="isheaderTest">
                     <label>url：</label>
                     <input type="text" name="url"  placeholder="请填写url" />
-                </div>
                 <div class="am-form-group">
                     <label>所在目录顺序号：</label>
                     <input type="text" requried  name="orders"   placeholder="请填写数字" />
@@ -85,13 +82,12 @@
                 <div class="com-buttonpositon">
                     <button type="button" class="am-btn am-btn-secondary saveMenu" >保存菜单</button>
                 </div>
-
             </fieldset>
 
         </form>
     </div>
-
     <div class="com-menudiv">
+
         <div>
             <ul id="treeDemo" class="ztree"></ul>
         </div>
