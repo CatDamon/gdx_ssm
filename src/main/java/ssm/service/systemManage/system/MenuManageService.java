@@ -24,4 +24,20 @@ public interface MenuManageService {
 
     /**根据ID查询该权限下所有目录*/
     public String getSonMenu(PageData pageData) throws Exception;
+
+    /**根据ID修改权限信息
+     * 如需修改所在目录排序号，请输入 "名称-排序号"
+     * */
+    public void editPer(String per_id, String nvoidew_per_name) throws Exception;
+
+    /**
+     * 根据ID查询权限
+     * */
+    public PageData selectPer(String per_id)throws Exception;
+
+    /**删除菜单树节点*/
+    public void delPer(String per_id) throws Exception;
+
+    /**判断该节点是否有子节点*/
+    public Boolean isHashSonNodes(String per_id) throws Exception;
 }

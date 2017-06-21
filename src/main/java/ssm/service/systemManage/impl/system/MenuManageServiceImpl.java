@@ -1,6 +1,7 @@
 package ssm.service.systemManage.impl.system;
 
 import org.eclipse.jetty.util.StringUtil;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.springframework.stereotype.Service;
 import ssm.exception.SystemServiceException;
 import ssm.service.common.impl.BaseServiceImpl;
@@ -11,6 +12,7 @@ import ssm.utils.Page;
 import ssm.utils.PageData;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 
 /**
@@ -130,6 +132,84 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
             throw new SystemServiceException("权限id不能为空!");
         }
         return sb.toString();
+    }
+
+    /**
+     * 根据ID修改权限信息
+     * 如需修改所在目录排序号，请输入 "名称-排序号"
+     *
+     * @param per_id
+     * @param new_per_name
+     */
+    @Override
+    public void editPer(String per_id, String new_per_name) throws Exception{
+        logger.info("MenuManageServiceImpl editPer...");
+        if(StringUtil.isNotBlank(per_id)){
+            PageData pd = new PageData();
+            //判断new_per_name是否带有顺序号
+            String[] str = new_per_name.split("-");
+            if(str.length>1){  //2个元素,说明具有orders属性
+                //校验数字
+                if(Pattern.matches("^\\+?[1-9][0-9]*$",str[1])){
+                    pd.put("orders",str[1]);
+                }else{
+                    throw new SystemServiceException("修改失败,顺序号必须填非零正整数！");
+                }
+
+            }
+            pd.put("per_id",per_id);
+            pd.put("per_name",str[0]);
+            this.daoSupport.update("MenuManageMapper.editPer",pd);
+        }else{
+            throw new SystemServiceException("权限ID不能为空!");
+        }
+    }
+
+    /**
+     * 根据ID查询权限
+     *
+     * @param per_id
+     */
+    @Override
+    public PageData selectPer(String per_id) throws Exception {
+        logger.info("MenuManageServiceImpl selectPer...");
+        if(StringUtil.isNotBlank(per_id)){
+            return (PageData) this.daoSupport.findForObject("MenuManageMapper.selectPer",per_id);
+        }else{
+            throw new SystemServiceException("权限ID不能为空");
+        }
+    }
+
+    /**
+     * 删除菜单树节点
+     *
+     * @param per_id
+     */
+    @Override
+    public void delPer(String per_id) throws Exception {
+        //logger.info("MenuManageServiceImpl delPer...");
+        if(StringUtil.isNotBlank(per_id)){
+            //删除选中节点
+            this.daoSupport.delete("MenuManageMapper.delPer",per_id);
+        }else{
+            throw new SystemServiceException("权限ID不能为空!");
+        }
+    }
+
+    /**
+     * 判断该节点是否有子节点
+     *
+     * @param per_id
+     */
+    @Override
+    public Boolean isHashSonNodes(String per_id) throws Exception {
+        logger.info("MenuManageServiceImpl isHashSonNodes..");
+        List<PageData> list = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.isHasSonNodes",per_id);
+        if(list.size()>0){ //说明有子节点
+            return true;
+        }else{
+            return false;
+        }
     }
 
 

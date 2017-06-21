@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
+import ssm.exception.SystemServiceException;
 import ssm.service.systemManage.system.MenuManageService;
 import ssm.state.IsHeaderState;
 import ssm.utils.Page;
@@ -93,11 +94,52 @@ public class MenuManageCtrl extends BaseController {
 	/**修改菜单名称和顺序号*/
 	@RequestMapping("/editPer")
     @ResponseBody
-	public Map<String, Object> editPer(@RequestParam String per_id, @RequestParam String new_per_name){
+	public Map<String, Object> editPer(@RequestParam String per_id, @RequestParam String new_per_name) {
 	    logger.info("MenuManageCtrl editPer...");
-	    System.out.println(per_id + "," + new_per_name);
-	    return null;
+	    Map<String, Object> map = new HashMap<String, Object>();
+		try {
+			//先查询原名称保存到内存
+			PageData perData = this.menuManageService.selectPer(per_id);
+			map.put("oldPerName",perData!=null?perData.getString("per_name"):new_per_name);
+			this.menuManageService.editPer(per_id, new_per_name);
+		} catch (Exception e) {
+			map.put("error",e.getMessage());
+			e.printStackTrace();
+		}
+		return map;
     }
+
+	/**判断是否有子节点*/
+	@RequestMapping("/isHasSonNodes")
+	@ResponseBody
+	public Map<String, Object> isHasSonNodes(@RequestParam String per_id) {
+		logger.info("MenuManageCtrl isHasSonNodes...");
+		Map<String, Object> map = new HashMap<String, Object>();
+		try {
+			Boolean temp = this.menuManageService.isHashSonNodes(per_id);
+			map.put("temp",temp);
+		} catch (Exception e) {
+			map.put("error","删除失败");
+			e.printStackTrace();
+		}
+		return map;
+	}
+
+
+    /**删除菜单树节点*/
+	@RequestMapping("/delPer")
+	@ResponseBody
+	public Map<String, Object> delPer(@RequestParam String per_id) {
+		logger.info("MenuManageCtrl delPer...");
+		Map<String, Object> map = new HashMap<String, Object>();
+		try {
+			this.menuManageService.delPer(per_id);
+		} catch (Exception e) {
+			map.put("error","删除失败");
+			e.printStackTrace();
+		}
+		return map;
+	}
 
 
 	/**动态生成用户菜单*/

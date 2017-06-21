@@ -47,9 +47,9 @@ function addIframe(cur){
 	
 	var fullWidth = $(window).width();
 	if(fullWidth >= 750){
-		$(".layout-side").show();
+		$(".layout-side").show("slow");
 	}else{
-		$(".layout-side").hide();
+		$(".layout-side").hide("slow");
 	}
 	
 	$(".content-tab").each(function() {
@@ -309,16 +309,16 @@ $(".header-menu-btn").click(function(){
 	$(".layout-side-arrow").removeClass("close");
 	$(".layout-side-arrow-icon").removeClass("close");
 	
-	$(".layout-side").slideToggle();
+	$(".layout-side").slideToggle("slow");
 });
 
 /*左侧菜单响应式*/
 $(window).resize(function() {  
 	var width = $(this).width();  
 	if(width >= 750){
-		$(".layout-side").show();
+		$(".layout-side").show("slow");
 	}else{
-		$(".layout-side").hide();
+		$(".layout-side").hide("slow");
 	}
 });
 

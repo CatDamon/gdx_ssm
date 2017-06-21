@@ -51,6 +51,8 @@
 			isheader = #{isheader}
 		and
 			ismenuorpoint = #{ismenuorpoint}
+		and
+			parentid is null
 		order by orders asc
 	</select>
 
@@ -64,5 +66,36 @@
 		where
 			parentid = #{id}
 		order by orders asc
+	</select>
+
+	<!-- 根据权限id更新权限信息 -->
+	<update id="editPer" parameterType="pd" >
+		update ry_permission set
+			<if test="orders != null and orders != ''">
+				orders = #{orders},
+			</if>
+			per_name = #{per_name}
+	  	where
+			per_id = #{per_id}
+	</update>
+
+	<!-- 根据ID查询权限信息 -->
+	<select id="selectPer" parameterType="String" resultType="pd">
+		select
+			per_name
+		from
+			ry_permission
+		where
+			per_id = #{per_id}
+	</select>
+
+	<!-- 根据权限id删除树节点 -->
+	<delete id="delPer" parameterType="String">
+		delete from ry_permission where  per_id = #{per_id}
+	</delete>
+
+	<!-- 根据id查询是否含有子节点 -->
+	<select id="isHasSonNodes" parameterType="String" resultType="pd">
+		select per_id from ry_permission where parentid = #{per_id}
 	</select>
 </mapper>

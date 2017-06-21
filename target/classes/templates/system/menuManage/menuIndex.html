@@ -35,7 +35,7 @@
     <div class="com-leftdiv" >
         <!--<button type="button" class="am-btn am-btn-secondary addMenu">添加菜单</button>-->
         <div class="com-title">添加权限</div>
-        <form action="" class="am-form" id="addMenuForm">
+        <form action="" class="am-form" id="addMenuForm" style="overflow: auto">
             <fieldset>
                 <div class="am-form-group">
                     <label>权限名称：</label>
@@ -73,8 +73,8 @@
                     <input type="text"  name="parentname" placeholder="请选择上级菜单" readonly/>
                     <input type="hidden"  name="parentid"  />
                     <input type="hidden" name="isheaderTest">
-                    <label>url：</label>
-                    <input type="text" name="url"  placeholder="请填写url" />
+                    <!--<label>url：</label>
+                    <input type="text" name="url"  placeholder="请填写url" />-->
                 <div class="am-form-group">
                     <label>所在目录顺序号：</label>
                     <input type="text" requried  name="orders"   placeholder="请填写数字" />
@@ -87,10 +87,11 @@
         </form>
     </div>
     <div class="com-menudiv">
-
+        <div><span style="color: red;">*若需要修改菜单顺序,请按"菜单新名称-顺序号(非零正整数)"格式输入</span></div>
         <div>
             <ul id="treeDemo" class="ztree"></ul>
         </div>
+
     </div>
 
 </div>
