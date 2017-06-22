@@ -399,9 +399,8 @@ function initMenu(menu,parent){
 $(function(){
 	/*获取皮肤*/
 	//getSkinByCookie();
-
 	/*菜单json*/
-	var menu = [{"id":"1","name":"主菜单","parentId":"0","url":"","icon":"","order":"1","isHeader":"1","childMenus":[
+	/*[var menu = {"id":"1","name":"主菜单","parentId":"0","url":"","icon":"","order":"1","isHeader":"1","childMenus":[
 					{"id":"3","name":"系统管理","parentId":"1","url":"","icon":"&#xe604;","order":"1","isHeader":"0","childMenus":[
 						{"id":"4","name":"人员管理","parentId":"3","url":"/system/userManage/toUserManage","icon":"","order":"1","isHeader":"0","childMenus":""},
 						{"id":"5","name":"角色管理","parentId":"3","url":"test2.html","icon":"","order":"1","isHeader":"0","childMenus":""},
@@ -428,8 +427,9 @@ $(function(){
 						]}
 					]}
 				]}
-				];
-	initMenu(menu,$(".side-menu"));
+				];*/
+    var menu = $("#menuData").text();
+	initMenu(eval('(' + menu + ')'),$(".side-menu"));
 	$(".side-menu > li").addClass("menu-item");
 	
 	/*获取菜单icon随机色*/

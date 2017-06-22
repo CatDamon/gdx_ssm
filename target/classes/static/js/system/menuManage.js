@@ -63,8 +63,8 @@ function isMenuOrPorint(value){
 }
 /**选择是否是根目录校验上级权限*/
 function isHeader(value){
-    //0是根目录,1是非根目录
-    if("0"===value){
+    //0是有父级目录,1是没有父级目录
+    if("1"===value){
         //清空上级目录值
         $("input[name=parentname]").val("");
         $("input[name=parentid]").val("");

@@ -98,4 +98,43 @@
 	<select id="isHasSonNodes" parameterType="String" resultType="pd">
 		select per_id from ry_permission where parentid = #{per_id}
 	</select>
+
+	<!-- 查询全部根目录菜单 -->
+	<select id="selectRootMenuData" parameterType="pd" resultType="pd">
+		select
+			per_id,
+			per_name,
+			url,
+			icon,
+			orders,
+			isheader,
+			ismenuorpoint
+		  from
+		  	ry_permission
+		  where
+		  	parentid is null
+		  and
+		  	ismenuorpoint = #{ismenuorpoint}
+		  order by orders asc
+	</select>
+
+	<!-- 查询子目录菜单 -->
+	<select id="selectUnRootMenuData" parameterType="pd" resultType="pd">
+		select
+			per_id,
+			per_name,
+			parentid,
+			url,
+			icon,
+			orders,
+			isheader,
+			ismenuorpoint
+		  from
+		  	ry_permission
+		  where
+		  	ismenuorpoint = #{ismenuorpoint}
+		  and
+		  	parentid = #{per_id}
+		  order by orders asc
+	</select>
 </mapper>

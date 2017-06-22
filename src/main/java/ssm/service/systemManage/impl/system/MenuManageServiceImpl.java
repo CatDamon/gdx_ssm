@@ -22,16 +22,78 @@ import java.util.regex.Pattern;
 public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManageService {
 
 
+    /**
+     * 根据登录用户动态生成左侧菜单
+     *
+     * @param pageData
+     */
     @Override
-    public Object getMenuJson(PageData pageData) {
+    public Object getMenuJson(PageData pageData) throws Exception {
         logger.info("MenuManageServiceImpl getMenuJson...");
-        StringBuffer menuStr = new StringBuffer();
-        //查询该用户所拥有菜单
-        menuStr.append("[{");
-        menuStr.append("id");
+        StringBuilder sb = new StringBuilder();
+        pageData.put("ismenuorpoint",IsMenuOrPointState.CDQX.getType_code());
+        pageData.put("isheader",IsHeaderState.GML.getType_code());  //父级类别
+        //查询根目录
+        List<PageData> rootList = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.selectRootMenuData",pageData);
+        sb.append("[");
+        for (int i =0;i < rootList.size(); i++){
+            recursiveSonMenuData(rootList.get(i),sb);
+            if(i != (rootList.size()-1)){ //判断最后一个元素不需要加,号
+                sb.append(",");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 
-        menuStr.append("}]");
-        return null;
+    /**递归获取子菜单*/
+    private StringBuilder recursiveSonMenuData(PageData fatherData,StringBuilder sb){
+        List<PageData> sonList = null;
+        try {
+            //获取该菜单的子节点
+            fatherData.put("ismenuorpoint",IsMenuOrPointState.CDQX.getType_code());
+            sonList = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.selectUnRootMenuData",fatherData);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if(sonList.size()==0){ //判断该节点下是否还有节点
+            sb.append("{");
+            sb.append("\"id\":\""+fatherData.get("per_id").toString()+"\",");
+            sb.append("\"name\":\""+fatherData.get("per_name").toString()+"\",");
+            sb.append("\"parentId\":\""+(fatherData.containsKey("parentid")?fatherData.get("parentid").toString():"")+"\",");
+            sb.append("\"url\":\""+ (fatherData.containsKey("url")?fatherData.get("url").toString():"")+"\",");
+            sb.append("\"icon\":\""+(fatherData.containsKey("icon")?fatherData.get("icon").toString():"&#xe604;")+"\",");
+            sb.append("\"order\":\""+fatherData.get("orders").toString()+"\",");
+            sb.append("\"isHeader\":\""+fatherData.get("isheader").toString()+"\",");
+            //递归获取子节点
+            sb.append("\"childMenus\":\"\"");
+            sb.append("}");
+            return sb;
+        }else{
+            sb.append("{");
+            sb.append("\"id\":\""+fatherData.get("per_id").toString()+"\",");
+            sb.append("\"name\":\""+fatherData.get("per_name").toString()+"\",");
+            sb.append("\"parentId\":\""+(fatherData.containsKey("parentid")?fatherData.get("parentid").toString():"")+"\",");
+            sb.append("\"url\":\""+ (fatherData.containsKey("url")?fatherData.get("url").toString():"")+"\",");
+            sb.append("\"icon\":\""+(fatherData.containsKey("icon")?fatherData.get("icon").toString():"")+"\",");
+            sb.append("\"order\":\""+fatherData.get("orders").toString()+"\",");
+            sb.append("\"isHeader\":\""+fatherData.get("isheader").toString()+"\",");
+            sb.append("\"childMenus\":[");
+            //递归获取子节点
+            for(int j =0; j<sonList.size(); j++){
+                PageData pd = sonList.get(j);
+                recursiveSonMenuData(pd,sb);
+                if(j != (sonList.size()-1)){ //判断最后一个元素后不需要加,号
+                    sb.append(",");
+                }
+                continue;
+            }
+            sb.append("]");
+            sb.append("}");
+            return sb;
+        }
+
+
     }
 
 
@@ -51,12 +113,12 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
     public void saveMenu(PageData pageData) throws Exception {
         logger.info("MenuManageServiceImpl saveMenu...");
         pageData.put("per_id",get32UUID()); //设置主键
-        if(IsMenuOrPointState.YMQXD.getType_code().equals(pageData.getString("ismenuorpoint"))){  //如果是页面权限点，则isheader的值改成非目录
+        if(IsMenuOrPointState.YMQXD.getType_code().equals(pageData.getString("ismenuorpoint"))){  //如果是页面权限点，则isheader的值改成有父级目录
             pageData.put("isheader",IsHeaderState.FGML.getType_code());
         }
         //判断该保存权限类别
         // 当且仅当ismenuorpoint属于菜单权限,并且isheader属于根目录时候,上级菜单不用做校验
-        if(!(IsMenuOrPointState.CDQX.getType_code().equals(pageData.getString("ismenuorpoint")) && IsHeaderState.GML.getType_code().equals(pageData.getString("isheader")))){
+        if(!(IsMenuOrPointState.CDQX.getType_code().equals(pageData.getString("ismenuorpoint")) && IsHeaderState.FGML.getType_code().equals(pageData.getString("isheader")))){
             if(!StringUtil.isNotBlank(pageData.getString("parentname"))){  //非菜单根目录都需要选择上级菜单
                 throw new SystemServiceException("该目录不是根目录,请在右侧点击选择相应的上级菜单");
             }else{
@@ -78,7 +140,7 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
         logger.info("MenuManageServiceImpl returnZtreeData...");
         //查询菜单权限的根目录
         PageData pd = new PageData();
-        pd.put("isheader",IsHeaderState.GML.getType_code());
+        pd.put("isheader",IsHeaderState.FGML.getType_code());
         pd.put("ismenuorpoint",IsMenuOrPointState.CDQX.getType_code());
         List<PageData> rootList = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.returnZtreeMenuRootData",pd);
         StringBuilder sb = new StringBuilder();

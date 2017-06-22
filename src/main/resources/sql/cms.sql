@@ -39,7 +39,7 @@ CREATE TABLE ry_permission (
   url       VARCHAR(255) DEFAULT NULL COMMENT '菜单链接',
   icon      VARCHAR(100) DEFAULT NULL  COMMENT '图标',
   orders     INT DEFAULT 0 COMMENT "所在目录顺序",
-  isheader      INT DEFAULT 0 COMMENT '0表示根目录,1表示非根目录',
+  isheader      INT DEFAULT 0 COMMENT '1表示有父级,0表示没有父级',
   ismenuorpoint      INT DEFAULT 0 COMMENT '0代表菜单权限,1代表页面权限点',
   PRIMARY KEY (per_id)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT '权限表';

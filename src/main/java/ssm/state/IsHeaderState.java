@@ -18,8 +18,8 @@ public class IsHeaderState extends SysStateSupport{
 		this.short_desc = short_desc;
 	}
 
-	public static final IsHeaderState GML = new IsHeaderState("0", "根目录");
-	public static final IsHeaderState FGML = new IsHeaderState("1", "非根目录");
+	public static final IsHeaderState GML = new IsHeaderState("0", "有父级目录");
+	public static final IsHeaderState FGML = new IsHeaderState("1", "没有父级目录");
 	static {
 		stateMap.put(GML.getType_code(), GML);
 		stateMap.put(FGML.getType_code(), FGML);

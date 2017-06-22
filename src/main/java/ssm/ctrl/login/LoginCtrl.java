@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
 import ssm.entity.User;
 import ssm.service.login.LoginService;
+import ssm.service.systemManage.system.MenuManageService;
 import ssm.utils.Const;
 import ssm.utils.PageData;
 
@@ -26,6 +27,9 @@ public class LoginCtrl extends BaseController {
 	
 	@Resource(name="LoginServiceImpl")
 	private LoginService loginService;
+
+	@Resource(name="MenuManageServiceImpl")
+	private MenuManageService menuManageService;
 	
 	
 	@RequestMapping("/loginOut")
@@ -60,13 +64,16 @@ public class LoginCtrl extends BaseController {
 		try { 
 			subject.login(token); 
 			map.put("msg", "success");
-			//登录成功,把user信息存到session里面
+			//登录成功,把user信息存到session里面 start
 			PageData loginData = this.loginService.selectUserAll(userData);
 			if(loginData != null){
 				this.getSession().setAttribute(Const.SESSION_USER,loginData.convertToBean(User.class));
 			}
+			//end
 
-		} catch (AuthenticationException e) { 
+
+
+		} catch (AuthenticationException e) {
 			map.put("message", "身份验证失败");
 			logger.error(e.getMessage());
 			return map;
@@ -79,6 +86,12 @@ public class LoginCtrl extends BaseController {
 	@RequestMapping("/toIndex")
 	public ModelAndView toIndex () {
 		ModelAndView mv = new ModelAndView("/common/index.html");
+		/**根据登录用户动态生成左侧栏权限菜单*/
+		try {
+			this.getRequest().setAttribute(Const.SESSION_MENUJSON,this.menuManageService.getMenuJson(new PageData()));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return mv;
 	}
 	
