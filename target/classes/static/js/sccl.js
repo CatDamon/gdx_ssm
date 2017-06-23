@@ -428,10 +428,10 @@ $(function(){
 					]}
 				]}
 				];*/
-    var menu = $("#menuData").text();
-	initMenu(eval('(' + menu + ')'),$(".side-menu"));
+	/**menuData.data属于menuData域范围里面,记录在menuList.html*/
+	initMenu(eval('(' + menuData.data + ')'),$(".side-menu"));
 	$(".side-menu > li").addClass("menu-item");
-	
+
 	/*获取菜单icon随机色*/
 	//getMathColor();
-}); 
+});

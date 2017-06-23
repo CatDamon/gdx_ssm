@@ -21,7 +21,7 @@
 	<div class="layout-admin">
 		<header class="layout-header">
 			<span class="header-logo">系统框架</span>
-			<textarea hidden id="menuData">${menuJson!}</textarea>
+
 			<a class="header-menu-btn" href="javascript:;"><i class="icon-font">&#xe600;</i></a>
 			<ul class="header-bar">
 				<li class="header-bar-role"><a href="javascript:;">超级管理员</a></li>
@@ -52,7 +52,7 @@
 		</aside>
 		
 		<div class="layout-side-arrow"><div class="layout-side-arrow-icon"><i class="icon-font">&#xe60d;</i></div></div>
-		
+
 		<section class="layout-main">
 			<div class="layout-main-tab">
 				<button class="tab-btn btn-left"><i class="icon-font">&#xe60e;</i></button>
@@ -68,6 +68,7 @@
 			</div>
 		</section>
 		<div class="layout-footer">@v1.0</div>
+		<% include("/common/menuList.html"){} %>
 	</div>
 	<script type="text/javascript" src="/static/lib/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="/static/js/sccl.js"></script>

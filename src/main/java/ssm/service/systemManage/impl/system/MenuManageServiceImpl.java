@@ -140,16 +140,37 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
         logger.info("MenuManageServiceImpl returnZtreeData...");
         //查询菜单权限的根目录
         PageData pd = new PageData();
+        StringBuilder sb = new StringBuilder();
         pd.put("isheader",IsHeaderState.FGML.getType_code());
         pd.put("ismenuorpoint",IsMenuOrPointState.CDQX.getType_code());
         List<PageData> rootList = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.returnZtreeMenuRootData",pd);
-        StringBuilder sb = new StringBuilder();
+        List<PageData> sonList = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.returnZtreeMenuSonDataByRoot",rootList);
         sb.append("[");
         for(int i =0; i<rootList.size(); i++){
             sb.append("{");
             sb.append("id:\""+ rootList.get(i).getString("per_id")+"\",");
             sb.append("name:\""+ rootList.get(i).getString("per_name")+"\",");
-            sb.append("open:"+ false+",");
+            sb.append("open:"+ true+",");
+            //遍历二级子目录
+            if(sonList.size()>0){
+                sb.append("children:[");
+                for(int j=0; j<sonList.size(); j++){
+                    //判断当前父类下面的子节点
+                    if(rootList.get(i).getString("per_id").equals(sonList.get(j).getString("parentid"))){
+                        sb.append("{");
+                        sb.append("id:\""+ sonList.get(j).getString("per_id")+"\",");
+                        sb.append("name:\""+ sonList.get(j).getString("per_name")+"\",");
+                        sb.append("open:"+ false+",");
+                        sb.append("isParent:"+ true);
+                        sb.append("}");
+                        if(j != (sonList.size()-1)){ //非最后一个后面需要加,号
+                            sb.append(",");
+                        }
+                    }
+                }
+                sb.append("]");
+                sb.append(",");
+            }
             sb.append("isParent:"+ true);
             sb.append("}");
             if(i != (rootList.size()-1)){//判断不是最后一个,后面加,号

@@ -44,7 +44,15 @@
 	<!-- 查询所有菜单根目录 -->
 	<select id="returnZtreeMenuRootData" parameterType="pd"  resultType="pd">
 		select
-			*
+			per_id,
+			per_name,
+			parentid,
+			parentname,
+			url,
+			icon,
+			orders,
+			isheader,
+			ismenuorpoint
 		from
 			ry_permission
 		where
@@ -53,6 +61,31 @@
 			ismenuorpoint = #{ismenuorpoint}
 		and
 			parentid is null
+		order by orders asc
+	</select>
+
+	<select id="returnZtreeMenuSonDataByRoot" parameterType="java.util.List" resultType="pd">
+		select
+			per_id,
+			per_name,
+			parentid,
+			parentname,
+			url,
+			icon,
+			orders,
+			isheader,
+			ismenuorpoint
+		from
+			ry_permission
+		where
+			1 = 1
+		<if test="list != null and list != ''">
+			and
+				parentid in
+			<foreach collection="list" close=")" index="index" item="item" open="(" separator=",">
+				#{item.per_id}
+			</foreach>
+		</if>
 		order by orders asc
 	</select>
 

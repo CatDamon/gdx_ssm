@@ -86,7 +86,7 @@ public class LoginCtrl extends BaseController {
 	@RequestMapping("/toIndex")
 	public ModelAndView toIndex () {
 		ModelAndView mv = new ModelAndView("/common/index.html");
-		/**根据登录用户动态生成左侧栏权限菜单*/
+		/**根据登录用户动态生成左侧栏权限菜单,集成shiro以后要封装到shirorame里面*/
 		try {
 			this.getRequest().setAttribute(Const.SESSION_MENUJSON,this.menuManageService.getMenuJson(new PageData()));
 		} catch (Exception e) {
