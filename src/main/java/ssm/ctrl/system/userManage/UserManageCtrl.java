@@ -47,7 +47,7 @@ public class UserManageCtrl extends BaseController {
 	public Map<String, Object> saveUser(){
 		logger.info("UserManageCtrl saveUser...");
 		Map<String,Object> map = new HashMap<String, Object>();
-		PageData pd = this.getPageData();
+		PageData pd = this.getPageData();     
 		return map;
 	}
 
