@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="023cc519-303a-48c1-8c07-e73e308c1fd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/common/menuList.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/common/test1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/common/test1.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/system/userManage.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/system/menuManage/addMenu.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ssm/ctrl/system/userManage/UserManageCtrl.class" afterPath="$PROJECT_DIR$/target/classes/ssm/ctrl/system/userManage/UserManageCtrl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/js/sccl.js" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/sccl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/userManage/UserManageMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/userManage/UserManageMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/sccl.js" afterPath="$PROJECT_DIR$/target/classes/static/js/sccl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/common/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/common/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/systemManage/userManage/UserManageMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/systemManage/userManage/UserManageMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/common/layout.html" afterPath="$PROJECT_DIR$/target/classes/templates/common/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/system/userManage/userIndex.html" afterPath="$PROJECT_DIR$/target/classes/templates/system/userManage/userIndex.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/addUser.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,25 +27,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menuIndex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex.html">
+      <file leaf-file-name="UserManageCtrl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="267">
+              <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1502#1518#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuManage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
+      <file leaf-file-name="userIndex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="52" />
+            <state relative-caret-position="22">
+              <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userManage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/userManage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -55,133 +62,31 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="UserManageMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/systemManage/userManage/UserManageMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuManageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/MenuManageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuManageServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="88" column="53" lean-forward="false" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuManageMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+            <state relative-caret-position="132">
+              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding>
-                <marker date="1498190301853" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="371:680" ph="insert into ry_permission... " />
-                <marker date="1498190301853" expanded="true" signature="371:994" ph="insert into ry_permission... " />
-                <marker date="1498190301853" expanded="true" signature="1104:1368" ph="select * fro... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="1474:1697" ph="select * fro... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="1474:1849" ph="select * fro... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="1951:2036" ph="select * fro... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="2117:2141" ph="update ry_pe... " />
-                <marker date="1498190301853" expanded="true" signature="2117:2247" ph="update ry_pe... " />
-                <marker date="1498190301853" expanded="true" signature="2117:2279" ph="update ry_pe... " />
-                <marker date="1498190301853" expanded="true" signature="2221:2247" ph="update ry_pe... " />
-                <marker date="1498190301853" expanded="true" signature="2379:2451" ph="select per_n... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="2533:2548" ph="delete from " />
-                <marker date="1498190301853" expanded="true" signature="2533:2569" ph="delete from " />
-                <marker date="1498190301853" expanded="true" signature="2533:2584" ph="delete from " />
-                <marker date="1498190301853" expanded="true" signature="2691:2750" ph="select per_i... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="2854:2963" ph="select per_i... " />
-                <marker date="1498190301853" expanded="true" signature="2854:3048" ph="select per_i... " />
-                <marker date="1498190301853" expanded="true" signature="2854:3072" ph="select per_i... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="3176:3387" ph="select per_i... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="3176:3411" ph="select per_i... ry_permission" />
-                <marker date="1498190301853" expanded="true" signature="3176:3412" ph="select per_i... " />
+                <marker date="1498192045558" expanded="true" signature="232:253" ph="select * fro... ry_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuManageCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/menuManage/MenuManageCtrl.java">
+      <file leaf-file-name="addUser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/userManage/addUser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="65" column="64" lean-forward="false" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="64" />
-              <folding>
-                <element signature="e#2930#2946#0" expanded="true" />
-                <element signature="e#3517#3533#0" expanded="true" />
-                <element signature="e#3944#3960#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sccl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/sccl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="432" column="47" lean-forward="true" selection-start-line="432" selection-start-column="47" selection-end-line="432" selection-end-column="47" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#11523#13783#0" expanded="false" />
-                <marker date="1498185256234" expanded="true" signature="1907:1915" ph="&amp;##xe617;" />
-                <marker date="1498185256234" expanded="true" signature="11100:11108" ph="&amp;##xe60b;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyBeetlGroupUtilConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ssm/common/MyBeetlGroupUtilConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="1122">
+              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -252,9 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/MenuManageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/MenuManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/system/UserManageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/UserManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/exception/SystemCtriException.java" />
@@ -262,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/login/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/login/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/login/LoginMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/exception/SystemCtrlException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/exception/SystemServiceException.java" />
@@ -270,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/templates/common/error.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/errorPage/error500.html" />
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/addMenu.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/system/menuManage/menuIndex2.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/common/common.js" />
@@ -296,13 +196,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/utils/Const.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql/cms.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/common/test1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/common/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/sccl.js" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/menuManage/MenuManageMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/systemManage/userManage/UserManageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/common/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/system/userManage/addUser.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/system/userManage.js" />
       </list>
     </option>
   </component>
@@ -393,9 +298,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,6 +325,194 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menuManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdx_ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,6 +566,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,12 +581,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\resources" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\errorPage" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\WEB-INF" />
-      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ssm.service.systemManage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\ztree\css" />
@@ -508,8 +597,12 @@
       <recent name="ssm.service.systemManage.impl" />
       <recent name="ssm.ctrl.system.menuManage" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ssm.service.systemManage" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\templates\system\userManage" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\resources" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\static\errorPage" />
+      <recent name="D:\IdeaProjects\gdx_ssm\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -972,12 +1065,16 @@
       <workItem from="1498010180770" duration="407000" />
       <workItem from="1498010626580" duration="21445000" />
       <workItem from="1498095967093" duration="21043000" />
-      <workItem from="1498184147388" duration="5415000" />
+      <workItem from="1498184147388" duration="7285000" />
+      <workItem from="1498199223801" duration="742000" />
+      <workItem from="1498562758066" duration="1283000" />
+      <workItem from="1498580785953" duration="3440000" />
+      <workItem from="1498615383691" duration="9613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246017000" />
+    <option name="totallyTimeSpent" value="262965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,7 +1092,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34175083" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2946128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1006,9 +1103,9 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13804714" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32154882" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22390573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22390573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1018,7 +1115,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25420874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54208755" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19288956" sideWeight="0.47643098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.47643098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25567323" sideWeight="0.52356905" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25267994" sideWeight="0.51804125" order="2" side_tool="true" content_ui="tabs" />
@@ -1055,31 +1152,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/metro.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/zTreeStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="87" column="109" lean-forward="true" selection-start-line="87" selection-start-column="109" selection-end-line="87" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/zTreeStyle/img/zTreeStandard.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/ztree/css/metroStyle/metroStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="82" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/lay/modules/tree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1091,7 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,18 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#1447#1448#0" expanded="false" />
-            <element signature="e#1473#1474#0" expanded="false" />
-            <element signature="e#1808#1809#0" expanded="false" />
-            <element signature="e#1838#1839#0" expanded="false" />
-            <element signature="e#1930#1931#0" expanded="false" />
-            <element signature="e#1963#1964#0" expanded="false" />
-            <element signature="e#2012#2013#0" expanded="false" />
-            <element signature="e#2041#2042#0" expanded="false" />
-            <element signature="e#2065#2066#0" expanded="false" />
-            <element signature="e#2083#2084#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,9 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,10 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="1435" column="46" lean-forward="true" selection-start-line="1435" selection-start-column="34" selection-end-line="1435" selection-end-column="46" />
-          <folding>
-            <element signature="e#56078#56079#0" expanded="false" />
-            <element signature="e#56155#56156#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,7 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="744" column="25" lean-forward="true" selection-start-line="744" selection-start-column="25" selection-end-line="744" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,7 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,11 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#3;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1295,16 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#253#278#0" expanded="false" />
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-            <element signature="e#806#807#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,9 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,32 +1380,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/sccl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="320">
           <caret line="432" column="47" lean-forward="true" selection-start-line="432" selection-start-column="47" selection-end-line="432" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#11523#13783#0" expanded="false" />
-            <marker date="1498185256234" expanded="true" signature="1907:1915" ph="&amp;##xe617;" />
-            <marker date="1498185256234" expanded="true" signature="11100:11108" ph="&amp;##xe60b;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1382,7 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,15 +1405,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/login/LoginCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
+        <state relative-caret-position="1210">
           <caret line="88" column="53" lean-forward="false" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,15 +1419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,7 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="324" column="31" lean-forward="true" selection-start-line="324" selection-start-column="31" selection-end-line="324" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,11 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="65" column="64" lean-forward="false" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="64" />
-          <folding>
-            <element signature="e#2930#2946#0" expanded="true" />
-            <element signature="e#3517#3533#0" expanded="true" />
-            <element signature="e#3944#3960#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1442,38 +1440,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="85" column="16" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding>
-            <marker date="1498190301853" expanded="true" signature="271:298" ph="select * fro... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="371:680" ph="insert into ry_permission... " />
-            <marker date="1498190301853" expanded="true" signature="371:994" ph="insert into ry_permission... " />
-            <marker date="1498190301853" expanded="true" signature="1104:1368" ph="select * fro... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="1474:1697" ph="select * fro... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="1474:1849" ph="select * fro... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="1951:2036" ph="select * fro... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="2117:2141" ph="update ry_pe... " />
-            <marker date="1498190301853" expanded="true" signature="2117:2247" ph="update ry_pe... " />
-            <marker date="1498190301853" expanded="true" signature="2117:2279" ph="update ry_pe... " />
-            <marker date="1498190301853" expanded="true" signature="2221:2247" ph="update ry_pe... " />
-            <marker date="1498190301853" expanded="true" signature="2379:2451" ph="select per_n... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="2533:2548" ph="delete from " />
-            <marker date="1498190301853" expanded="true" signature="2533:2569" ph="delete from " />
-            <marker date="1498190301853" expanded="true" signature="2533:2584" ph="delete from " />
-            <marker date="1498190301853" expanded="true" signature="2691:2750" ph="select per_i... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="2854:2963" ph="select per_i... " />
-            <marker date="1498190301853" expanded="true" signature="2854:3048" ph="select per_i... " />
-            <marker date="1498190301853" expanded="true" signature="2854:3072" ph="select per_i... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="3176:3387" ph="select per_i... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="3176:3411" ph="select per_i... ry_permission" />
-            <marker date="1498190301853" expanded="true" signature="3176:3412" ph="select per_i... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ssm/service/systemManage/impl/system/MenuManageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+        <state relative-caret-position="86">
+          <caret line="49" column="66" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/menuManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/userManage/userIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="77" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/system/userManage/addUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/systemManage/userManage/UserManageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <marker date="1498192045558" expanded="true" signature="232:253" ph="select * fro... ry_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/common/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/system/userManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ssm/ctrl/system/userManage/UserManageCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="e#1502#1518#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

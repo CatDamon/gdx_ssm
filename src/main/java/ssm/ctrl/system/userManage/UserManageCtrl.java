@@ -12,7 +12,9 @@ import ssm.utils.PageData;
 
 import javax.annotation.Resource;
 import javax.security.auth.Subject;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Controller
@@ -31,4 +33,22 @@ public class UserManageCtrl extends BaseController {
 		mv.addObject("userList" ,userList);
 		return mv;
 	}
+
+	/**跳转到添加用户界面*/
+	@RequestMapping("/toAddUser")
+	public ModelAndView toAddUser () throws Exception{
+		logger.info("UserManageCtrl toAddUser...");
+		ModelAndView mv = new ModelAndView("/system/userManage/addUser.html");
+		return mv;
+	}
+
+	/**保存用户*/
+	@RequestMapping("/saveUser")
+	public Map<String, Object> saveUser(){
+		logger.info("UserManageCtrl saveUser...");
+		Map<String,Object> map = new HashMap<String, Object>();
+		PageData pd = this.getPageData();
+		return map;
+	}
+
 }
