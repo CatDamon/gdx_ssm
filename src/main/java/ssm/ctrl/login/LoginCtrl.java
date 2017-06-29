@@ -36,6 +36,7 @@ public class LoginCtrl extends BaseController {
 	public String loginOut() {
 		//shiro销毁登录
 		Subject subject = SecurityUtils.getSubject();
+		System.out.println("234243243");
 		subject.logout();
 		getRequest().getSession().removeAttribute(Const.SESSION_USER);
 		getRequest().getSession().removeAttribute(Const.SESSION_USERNAME);
