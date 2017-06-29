@@ -6,6 +6,7 @@ ssm\utils\PageData.class
 ssm\service\systemManage\system\MenuManageService.class
 ssm\ctrl\system\userManage\UserManageCtrl.class
 ssm\state\SysStateSupport.class
+ssm\utils\DES.class
 ssm\state\IsMenuOrPointState.class
 ssm\ctrl\system\menuManage\MenuManageCtrl.class
 ssm\ctrl\common\BaseController.class

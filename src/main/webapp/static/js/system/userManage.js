@@ -19,10 +19,11 @@ $(function () {
                         type:"post",
                         data:$("#addUserForm").serialize(),
                         success:function (data) {
-                            if(data.error == null && data.error == ""){
-                                layer.msg(data.error);
+                            if(data.error != null && data.error != ""){
+                                layer.msg(data.error,{icon: 5});
                             }else{
-                                layer.msg("保存成功");
+                                window.top.layer.msg("保存成功",{icon: 1});
+                                window.location.reload();
                             }
                         }
                     })

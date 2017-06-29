@@ -2,10 +2,11 @@ package ssm.service.systemManage.impl.system;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import ssm.exception.SystemServiceException;
 import ssm.service.common.impl.BaseServiceImpl;
 import ssm.service.systemManage.system.UserManageService;
 import ssm.state.AvailableState;
-import ssm.utils.DES;
+import ssm.utils.CodecAndCrypUtil;
 import ssm.utils.Page;
 import ssm.utils.PageData;
 
@@ -34,11 +35,17 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
     @Override
     public void saveUser(PageData pageData) throws Exception {
         logger.info("UserManageServiceImpl saveUser...");
-        //密码DES加密
-        if(StringUtils.isNotBlank(pageData.getString("password"))){
-            pageData.put("password", DES.get3DESEncrypt(pageData.getString("password")));
+        //判断该用户名是否已经存在，存在则添加失败
+        List<PageData> ishasAccount = (List<PageData>) this.daoSupport.findForList("UserManageMapper.isHasSaveAccount",pageData);
+        if(ishasAccount.size()>0){ //说明该用户名已经存在
+            throw new SystemServiceException("该用户名已经存在,请重新输入用户名!");
         }
-        this.daoSupport.save("",pageData);
-
+        //密码DES加密
+        pageData.put("userid",get32UUID());
+        pageData.put("available",AvailableState.WJH.getType_code());
+        if(StringUtils.isNotBlank(pageData.getString("password"))){
+            pageData.put("password", CodecAndCrypUtil.MD5(pageData.getString("password")));
+        }
+        this.daoSupport.save("UserManageMapper.saveUser",pageData);
     }
 }

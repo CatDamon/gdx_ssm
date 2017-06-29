@@ -19,5 +19,6 @@ public class Const {
 	public static final String FALSE = "F";
 	public static final String SESSION_MENUJSON = "menuJson";  //用户菜单对象
 
+
 }
 
