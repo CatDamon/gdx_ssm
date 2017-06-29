@@ -15,7 +15,11 @@ import java.util.List;
  */
 public interface UserManageService {
 
+
     public List<PageData> selectUserList(Page page) throws Exception;
+
+    /**添加用户*/
+    public void saveUser(PageData pageData) throws Exception;
 }
 
 

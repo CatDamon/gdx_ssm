@@ -3,6 +3,7 @@ package ssm.ctrl.system.userManage;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
 import ssm.service.systemManage.system.UserManageService;
@@ -45,10 +46,17 @@ public class UserManageCtrl extends BaseController {
 
 	/**保存用户*/
 	@RequestMapping("/saveUser")
+	@ResponseBody
 	public Map<String, Object> saveUser(){
 		logger.info("UserManageCtrl saveUser...");
 		Map<String,Object> map = new HashMap<String, Object>();
-		PageData pd = this.getPageData();     
+		PageData pd = this.getPageData();
+		try {
+			this.userManageService.saveUser(pd);
+		} catch (Exception e) {
+			map.put("error",e.getMessage());
+			e.printStackTrace();
+		}
 		return map;
 	}
 
