@@ -15,6 +15,7 @@
 
 
 
+
   </head>
 
   <body>
@@ -73,8 +74,19 @@
 	<script type="text/javascript" src="/static/lib/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="/static/js/sccl.js"></script>
 	<script type="text/javascript" src="/static/js/sccl-util.js"></script>
+	<script type="text/javascript" src="/static/layer/layer.js"></script>
+	<link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+	<script type="text/javascript" src="/static/layui/layui.js" charset="utf-8"></script>
 
 
 
   </body>
 </html>
+<script>
+	//设置主框架src属性，以便分页能获取到
+	function toIndex(url){
+		if($("#mainFrame")){
+      		 $("#mainFrame").attr("src",url);
+      	 }
+	}
+</script>

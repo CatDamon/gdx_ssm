@@ -30,7 +30,7 @@ public class UserManageCtrl extends BaseController {
 	public ModelAndView toUserManage (Page page) throws Exception {
 		logger.info("UserManageCtrl toUserManage...");
 		ModelAndView mv = new ModelAndView("/system/userManage/userIndex.html");
-		logger.info(this.getRequest().getSession().getId());
+		System.out.println("==============参数："+this.getPageData());
 		List<PageData> userList = this.userManageService.selectUserList(page);
 		mv.addObject("userList" ,userList);
 		return mv;
