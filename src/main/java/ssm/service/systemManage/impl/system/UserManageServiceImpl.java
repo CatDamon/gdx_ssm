@@ -38,7 +38,7 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
         if(StringUtils.isNotBlank(pageData.getString("password"))){
             pageData.put("password", DES.get3DESEncrypt(pageData.getString("password")));
         }
-        this.daoSupport.save("",pageData);
+        this.daoSupport.save("",pageData); 
 
     }
 }
