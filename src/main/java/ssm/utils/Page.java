@@ -350,12 +350,14 @@ public class Page<T> implements Serializable {
 			sb.append("function nextPage(page){");
 			sb.append(" ");
 			sb.append("	if(true && document.forms[0]){\n");
-			sb.append("		var url = document.forms[0].getAttribute(\"action\");\n");
+			/*sb.append("		var url = document.forms[0].getAttribute(\"action\");\n");*/
+			sb.append("		var url = $(window.parent.document).find('a[class=\"content-tab active\"]').attr('data-id');\n");
 			sb.append("		if(url.indexOf('?')>-1){url += \"&"+(entityOrField?"pageIndex":"page.pageIndex")+"=\";}\n");
 			sb.append("		else{url += \"?"+(entityOrField?"pageIndex":"page.pageIndex")+"=\";}\n");
 			sb.append("		url = url + page + \"&" +(entityOrField?"pageSize":"page.pageSize")+"="+pageSize+"\";\n");
 			sb.append("		document.forms[0].action = url;\n");
-			sb.append("		document.forms[0].submit();\n");
+			//sb.append("		document.forms[0].submit();\n");
+			sb.append("		document.location.href=url;\n");
 			sb.append("	}else{\n");
 			sb.append("		var url = document.location+'';\n");
 			sb.append("		if(url.indexOf('?')>-1){\n");
@@ -375,12 +377,14 @@ public class Page<T> implements Serializable {
 			sb.append("function changeCount(value){");
 			sb.append(" ");
 			sb.append("	if(true && document.forms[0]){\n");
-			sb.append("		var url = document.forms[0].getAttribute(\"action\");\n");
+			/*sb.append("		var url = document.forms[0].getAttribute(\"action\");\n");*/
+			sb.append("		var url = $(window.parent.document).find('a[class=\"content-tab active\"]').attr('data-id');\n");
 			sb.append("		if(url.indexOf('?')>-1){url += \"&"+(entityOrField?"pageIndex":"page.pageIndex")+"=\";}\n");
 			sb.append("		else{url += \"?"+(entityOrField?"pageIndex":"page.pageIndex")+"=\";}\n");
 			sb.append("		url = url + \"1&" +(entityOrField?"pageSize":"page.pageSize")+"=\"+value;\n");
 			sb.append("		document.forms[0].action = url;\n");
-			sb.append("		document.forms[0].submit();\n");
+			/*sb.append("		document.forms[0].submit();\n");*/
+			sb.append("		document.location.href=url;\n");
 			sb.append("	}else{\n");
 			sb.append("		var url = document.location+'';\n");
 			sb.append("		if(url.indexOf('?')>-1){\n");

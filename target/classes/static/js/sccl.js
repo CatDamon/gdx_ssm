@@ -69,7 +69,7 @@ function addIframe(cur){
 		});
 	}
 	if (!isHas) {   //没有该选项卡 点击菜单添加
-		var tab = "<a href='javascript:;' class='content-tab active' data-id='"+h+"'>"+ label +" <i class='icon-font'>&#xe617;</i></a>";
+		var tab = "<a href='javascript:;' class='content-tab active' data-id='"+h+"' src='"+h+"'>"+ label +" <i class='icon-font'>&#xe617;</i></a>";
 		$(".content-tab").removeClass("active");
 		$(".tab-nav-content").append(tab);
 		var iframe = "<iframe class='body-iframe' name='iframe"+ m +"' width='99%' height='99%' src='"+ h +"' frameborder='0' data-id='"+ h +"' seamless></iframe>";
@@ -379,10 +379,10 @@ function initMenu(menu,parent){
             }else{
                 item.icon == "" ? item.icon = "&#xe610" : item.icon = item.icon;
                 if(item.childMenus == ""){
-                    str = "<li><a href='"+item.url+"'><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
+                    str = "<li><a href='"+ item.url +"' ><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
                     $(parent).append(str);
                 }else{
-                    str = "<li><a href='"+item.url+"'><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
+                    str = "<li><a href='"+ item.url +"' ><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
                     str +="<ul class='menu-item-child' id='menu-child-"+item.id+"'></ul></li>";
                     $(parent).append(str);
                     var childParent = $("#menu-child-"+item.id);
