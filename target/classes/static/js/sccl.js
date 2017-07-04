@@ -379,10 +379,10 @@ function initMenu(menu,parent){
             }else{
                 item.icon == "" ? item.icon = "&#xe610" : item.icon = item.icon;
                 if(item.childMenus == ""){
-                    str = "<li><a href='"+item.url+"'><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
+                    str = "<li><a href='"+item.url+"' ><i class='icon-font'>"+item.icon+"</i><span>"+item.name+"</span></a></li>";
                     $(parent).append(str);
                 }else{
-                    str = "<li><a href='"+item.url+"'><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
+                    str = "<li><a href='"+item.url+"' ><i class='icon-font '>"+item.icon+"</i><span>"+item.name+"</span><i class='icon-font icon-right'>&#xe60b;</i></a>";
                     str +="<ul class='menu-item-child' id='menu-child-"+item.id+"'></ul></li>";
                     $(parent).append(str);
                     var childParent = $("#menu-child-"+item.id);
@@ -431,6 +431,8 @@ $(function(){
 	/**menuData.data属于menuData域范围里面,记录在menuList.html*/
 	initMenu(eval('(' + menuData.data + ')'),$(".side-menu"));
 	$(".side-menu > li").addClass("menu-item");
+
+
 
 	/*获取菜单icon随机色*/
 	//getMathColor();
