@@ -47,7 +47,7 @@ public class StartJetty {
             e.printStackTrace();  
         } catch (IOException e) {  
             e.printStackTrace();  
-        } catch (Exception e) {     
+        } catch (Exception e) {
             e.printStackTrace();  
         }  
     }  
