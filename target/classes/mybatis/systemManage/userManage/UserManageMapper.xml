@@ -3,6 +3,9 @@
 	<!-- 查询 -->
 	<select id="selectUserlistPage" parameterType="page" resultType="pd">
 		select * from ry_user
+		<if test="pd.condition != null and pd.condition != ''">
+			where ${pd.condition} like concat("%",#{pd.conditionVal},"%")
+		</if>
 	</select>
 
 	<!-- 保存用户 -->
