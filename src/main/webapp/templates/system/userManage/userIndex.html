@@ -43,7 +43,7 @@
             <tr>
                 <td>${user.username}</td>
                 <td>${user.available}</td>
-                <td><a>激活</a></td>
+                <td><a href="javascript:;" value="${user.userid}" onclick="activativeAccount(this.value)">${user.available == '已激活'?'冻结':'激活'}</a></td>
             </tr>
             <%}%>
 

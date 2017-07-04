@@ -35,8 +35,23 @@ $(function () {
         });
     });
 
-
-
-
-
 });
+
+/**激活*/
+function activativeAccount(userid){
+    $.ajax({
+        url:"",
+        datatype:"json",
+        type:"post",
+        data:{"userid":userid},
+        success:function(data){
+            if(data.error != null && data.error != ""){
+                 layer.msg(data.error,{icon: 5});
+            }else{
+                 window.top.layer.msg("激活成功",{icon: 1});
+
+            }
+        }
+
+    });
+}

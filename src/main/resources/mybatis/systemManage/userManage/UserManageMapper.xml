@@ -6,6 +6,7 @@
 		<if test="pd.condition != null and pd.condition != ''">
 			where ${pd.condition} like concat("%",#{pd.conditionVal},"%")
 		</if>
+		order by available,username
 	</select>
 
 	<!-- 保存用户 -->
