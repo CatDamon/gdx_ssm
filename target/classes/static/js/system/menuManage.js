@@ -30,10 +30,10 @@ $(function(){
                 type:"post",
                 success:function (data) {
                     if(data.error!=null && data.error!=''){
-                        layer.msg(data.error);
+                        layer.msg(data.error,{icon: 5});
                     }else{
                         //添加成功
-                        layer.msg("添加权限成功");
+                        layer.msg("添加权限成功",{icon: 1});
                         //此处重新生成菜单树
                         initMenuTree();
 
@@ -167,10 +167,10 @@ function zTreeOnRename(event, treeId, treeNode, isCancel) {
         success:function (data) {
             if(data.error != null && data.error != ''){
                 $("#"+treeNode.tId).find("span[id$='_span']").text(data.oldPerName);
-                layer.msg(data.error);
+                layer.msg(data.error,{icon: 5});
             }else{ //修改成功,重新加载树菜单
                 initMenuTree();
-                layer.msg("修改成功!");
+                layer.msg("修改成功!",{icon: 1});
             }
         }
     });
@@ -189,7 +189,7 @@ function zTreeBeforeRemove(treeId, treeNode) {
         },
         success:function (data) {
             if(data.error != null && data.error != ''){
-                layer.msg(data.error);
+                layer.msg(data.error,{icon: 5});
             }else{ //若有子节点,则返回false,并打开节点数据,若没有,则直接删除
                var temp = data.temp;
                if(temp){
@@ -216,10 +216,10 @@ function zTreeOnRemove(event, treeId, treeNode) {
         },
         success:function (data) {
             if(data.error != null && data.error != ''){
-                layer.msg(data.error);
+                layer.msg(data.error,{icon: 5});
             }else{ //删除成功,重新加载树菜单
                 initMenuTree();
-                layer.msg("删除成功!");
+                layer.msg("删除成功!",{icon: 1});
             }
         }
     });

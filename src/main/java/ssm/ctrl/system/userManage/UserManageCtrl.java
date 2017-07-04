@@ -7,12 +7,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ssm.ctrl.common.BaseController;
 import ssm.service.systemManage.system.UserManageService;
-import ssm.utils.Const;
 import ssm.utils.Page;
 import ssm.utils.PageData;
 
 import javax.annotation.Resource;
-import javax.security.auth.Subject;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,7 +28,16 @@ public class UserManageCtrl extends BaseController {
 	public ModelAndView toUserManage (Page page) throws Exception {
 		logger.info("UserManageCtrl toUserManage...");
 		ModelAndView mv = new ModelAndView("/system/userManage/userIndex.html");
-		page.setPageSize(1);
+		PageData pd = this.getPageData();
+		if(pd.containsKey("condition")){
+			if(!"-1".equals(pd.get("condition"))){ //非-1说明是条件查询
+				page.setPd(pd);
+				mv.addObject(pd.getString("condition"),true);
+				if(pd.containsKey("conditionVal")){
+					mv.addObject("conditionVal",pd.getString("conditionVal"));
+				}
+			}
+		}
 		List<PageData> userList = this.userManageService.selectUserList(page);
 		mv.addObject("userList" ,userList);
 		return mv;
