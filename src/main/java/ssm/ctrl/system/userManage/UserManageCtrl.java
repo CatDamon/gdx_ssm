@@ -69,4 +69,41 @@ public class UserManageCtrl extends BaseController {
 		return mv;
 	}
 
+
+	/**跳转到修改用户界面*/
+	@RequestMapping("/toEditUser")
+	public ModelAndView toEditUser () throws Exception{
+		logger.info("UserManageCtrl toEditUser...");
+		ModelAndView mv = new ModelAndView("/system/userManage/editUser.html");
+		return mv;
+	}
+
+
+	/**修改用户*/
+	@RequestMapping("/editUser")
+	@ResponseBody
+	public Map<String, Object> editUser(){
+		logger.info("UserManageCtrl editUser...");
+		PageData pd = this.getPageData();
+		Map<String,Object> map = new HashMap<String, Object>();
+		try {
+			this.userManageService.editUser(pd);
+		} catch (Exception e) {
+			map.put("error","修改失败!");
+			e.printStackTrace();
+		}
+		return map;
+	}
+
+	/**删除用户*/
+	@RequestMapping("/delUser")
+	public ModelAndView delUser () throws Exception{
+		logger.info("UserManageCtrl toEditUser...");
+		ModelAndView mv = new ModelAndView("forward:/system/userManage/toUserManage");
+		PageData pageData = this.getPageData();
+		this.userManageService.delUser(pageData);
+		return mv;
+	}
+
+
 }

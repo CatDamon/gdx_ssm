@@ -69,5 +69,31 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
         }
     }
 
+    /**
+     * 修改用户
+     *
+     * @param pageData
+     */
+    @Override
+    public void editUser(PageData pageData) throws Exception {
+        logger.info("UserManageServiceImpl editUser...");
+        if(StringUtils.isNotBlank(pageData.getString("password"))){
+            pageData.put("password", CodecAndCrypUtil.MD5(pageData.getString("password")));
+        }
+        this.daoSupport.update("UserManageMapper.editUser",pageData);
+    }
+
+    /**
+     * 删除用户
+     *
+     * @param pageData
+     */
+    @Override
+    public void delUser(PageData pageData) throws Exception {
+        logger.info("UserManageServiceImpl delUser...");
+        this.daoSupport.delete("UserManageMapper.delUser",pageData);
+
+    }
+
 
 }

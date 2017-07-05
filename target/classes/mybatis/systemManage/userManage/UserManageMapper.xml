@@ -36,4 +36,17 @@
 		where
 			userid = #{userid}
 	</update>
+
+	<!-- 修改用户 -->
+	<update id="editUser" parameterType="pd">
+		update ry_user set
+			password = #{password}
+		where
+			userid = #{userid}
+	</update>
+
+	<!-- 删除用户 -->
+	<delete id="delUser" parameterType="pd">
+		delete from ry_user where userid = #{userid}
+	</delete>
 </mapper>

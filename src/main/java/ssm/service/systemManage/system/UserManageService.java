@@ -23,6 +23,12 @@ public interface UserManageService {
 
     /**激活用户*/
     public void activativeAccount(PageData pageData) throws Exception;
+
+    /**修改用户*/
+    public void editUser(PageData pageData) throws Exception;
+
+    /**删除用户*/
+    public void delUser(PageData pageData) throws Exception;
 }
 
 

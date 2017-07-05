@@ -35,7 +35,61 @@ $(function () {
         });
     });
 
+    /**跳转到修改用户界面*/
+    $("#editUser").on('click',function () {
+           var userid = $(this).attr("value");
+           if(isEmpty(userid)){
+                layer.msg("userid不能为空!修改失败",{icon: 5});
+                return false;
+           }
+           $.ajax({
+               url:"/system/userManage/toEditUser",
+               type: "POST"
+            }).done(function(data) {
+                layer.open({
+                    type: 1,
+                    shade: [0.6, '#AAAAAA'],
+                    area: ["450px", "500px"],
+                    title: "修改用户密码",
+                    content: data,
+                    btn:['确定','取消'],
+                    yes:function () {
+                        $.ajax({
+                            url:"/system/userManage/editUser?userid="+userid,
+                            datatype:"json",
+                            type:"post",
+                            data:$("#editUserForm").serialize(),
+                            success:function (data) {
+                                if(data.error != null && data.error != ""){
+                                    layer.msg(data.error,{icon: 5});
+                                }else{
+                                    window.top.layer.msg("修改成功",{icon: 1});
+                                    window.location.reload();
+                                }
+                            }
+                        })
+                    },
+                    btn2:function () {
+
+                    }
+                });
+            });
+        });
+
 });
+
+/**删除用户*/
+function delUser(obj){
+    var userid = $(obj).attr("value");
+    layer.confirm('是否删除?', function(index){
+        if(isEmpty(userid)){
+           layer.msg("userid不能为空!删除失败",{icon: 5});
+           return false;
+        }
+        window.location.href="/system/userManage/delUser?userid="+userid;
+     });
+
+}
 
 /**激活、冻结用户*/
 function activativeAccount(obj){
