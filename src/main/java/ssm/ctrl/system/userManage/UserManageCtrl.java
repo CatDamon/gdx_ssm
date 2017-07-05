@@ -53,7 +53,7 @@ public class UserManageCtrl extends BaseController {
 		try {
 			this.userManageService.saveUser(pd);
 		} catch (Exception e) {
-			map.put("error","添加失败!");
+			map.put("error",e.getMessage());
 			e.printStackTrace();
 		}
 		return map;
