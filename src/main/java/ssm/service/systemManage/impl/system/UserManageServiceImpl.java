@@ -48,4 +48,26 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
         }
         this.daoSupport.save("UserManageMapper.saveUser",pageData);
     }
+
+    /**
+     * 激活用户
+     *
+     * @param pageData
+     */
+    @Override
+    public void activativeAccount(PageData pageData) throws Exception {
+        logger.info("UserManageServiceImpl pageData...");
+        if(StringUtils.isNoneBlank(pageData.getString("userid"))){
+            if(AvailableState.WJH.getShort_desc().equals(pageData.getString("availableCode"))){
+                pageData.put("available",AvailableState.YJH.getType_code());
+            }else{
+                pageData.put("available",AvailableState.WJH.getType_code());
+            }
+            this.daoSupport.update("UserManageMapper.activativeAccount",pageData);
+        }else{
+            throw new SystemServiceException("用户id不能为空!");
+        }
+    }
+
+
 }

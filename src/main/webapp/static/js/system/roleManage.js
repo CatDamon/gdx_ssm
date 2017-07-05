@@ -15,7 +15,7 @@ $(function () {
                 yes:function () {
                     //角色名称不能为空
                     var rolename = $('input[name=rolename]').val();
-                    if(isEnpty(rolename)){
+                    if(isEmpty(rolename)){
                         layer.msg("角色名称不能为空",{icon: 5});
                         return false;
                     }

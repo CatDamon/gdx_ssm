@@ -20,6 +20,9 @@ public interface UserManageService {
 
     /**添加用户*/
     public void saveUser(PageData pageData) throws Exception;
+
+    /**激活用户*/
+    public void activativeAccount(PageData pageData) throws Exception;
 }
 
 

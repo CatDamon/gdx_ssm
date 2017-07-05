@@ -59,4 +59,14 @@ public class UserManageCtrl extends BaseController {
 		return map;
 	}
 
+	/**激活*/
+	@RequestMapping("/activativeAccount")
+	public ModelAndView activativeAccount() throws Exception {
+		logger.info("UserManageCtrl activativeAccount...");
+		ModelAndView mv = new ModelAndView("forward:/system/userManage/toUserManage");
+		PageData pd = this.getPageData();
+		this.userManageService.activativeAccount(pd);
+		return mv;
+	}
+
 }

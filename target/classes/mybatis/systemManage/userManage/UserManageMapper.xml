@@ -28,4 +28,12 @@
 	<select id="isHasSaveAccount" parameterType="pd" resultType="pd">
 		select username from ry_user where username = #{username}
 	</select>
+
+	<!-- 激活用户 -->
+	<update id="activativeAccount" parameterType="pd">
+		update ry_user set
+			available = #{available}
+		where
+			userid = #{userid}
+	</update>
 </mapper>

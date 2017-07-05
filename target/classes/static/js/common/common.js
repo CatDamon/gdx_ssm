@@ -45,7 +45,7 @@ function validateNoNull(formId){
 /**
  * 校验非空 ,值为空返回真
  * */
-function isEnpty (value){
+function isEmpty (value){
     if(value === null || value === '' || value === undefined){
         return true;
     }else{

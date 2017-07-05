@@ -37,21 +37,22 @@ $(function () {
 
 });
 
-/**激活*/
-function activativeAccount(userid){
-    $.ajax({
-        url:"",
-        datatype:"json",
-        type:"post",
-        data:{"userid":userid},
-        success:function(data){
-            if(data.error != null && data.error != ""){
-                 layer.msg(data.error,{icon: 5});
-            }else{
-                 window.top.layer.msg("激活成功",{icon: 1});
+/**激活、冻结用户*/
+function activativeAccount(obj){
+    var userid = $(obj).attr('value');
+    var availableCode = $(obj).attr('available');
+    if("未激活" === availableCode){ //未激活,需要激活
+         if(isEmpty(userid)){
+              layer.msg("激活失败!用户id不能为空",{icon:5});
+              return false;
+         }
+         window.location.href="/system/userManage/activativeAccount?userid="+userid+"&availableCode="+availableCode;
+    }else{ //已经激活,需要冻结
+         if(isEmpty(userid)){
+               layer.msg("冻结失败!用户id不能为空",{icon:5});
+               return false;
+         }
+         window.location.href="/system/userManage/activativeAccount?userid="+userid+"&availableCode="+availableCode;
+    }
 
-            }
-        }
-
-    });
 }
