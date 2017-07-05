@@ -12,4 +12,7 @@ public interface RoleManageService {
 
     /**查询全部角色*/
     public List<PageData> findRole(Page page) throws Exception;
+
+    /**保存角色*/
+    public void saveRole(PageData pageData) throws Exception;
 }

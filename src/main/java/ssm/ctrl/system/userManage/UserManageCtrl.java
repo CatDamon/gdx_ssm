@@ -29,15 +29,7 @@ public class UserManageCtrl extends BaseController {
 		logger.info("UserManageCtrl toUserManage...");
 		ModelAndView mv = new ModelAndView("/system/userManage/userIndex.html");
 		PageData pd = this.getPageData();
-		if(pd.containsKey("condition")){
-			if(!"-1".equals(pd.get("condition"))){ //非-1说明是条件查询
-				page.setPd(pd);
-				mv.addObject(pd.getString("condition"),true);
-				if(pd.containsKey("conditionVal")){
-					mv.addObject("conditionVal",pd.getString("conditionVal"));
-				}
-			}
-		}
+		this.setConditionForQuery(pd,mv,page);
 		List<PageData> userList = this.userManageService.selectUserList(page);
 		mv.addObject("userList" ,userList);
 		return mv;
@@ -61,7 +53,7 @@ public class UserManageCtrl extends BaseController {
 		try {
 			this.userManageService.saveUser(pd);
 		} catch (Exception e) {
-			map.put("error",e.getMessage());
+			map.put("error","添加失败!");
 			e.printStackTrace();
 		}
 		return map;

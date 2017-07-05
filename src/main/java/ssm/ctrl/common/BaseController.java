@@ -98,4 +98,22 @@ public class BaseController{
 		org.apache.shiro.session.Session session =  subject.getSession();
 		return session;
 	}
+
+	/**输入条件查询的数据
+	 * pd 请求参数
+	 * mv 模型
+	 * page
+	 *
+	 * */
+	protected void setConditionForQuery(PageData pd,ModelAndView mv,Page page){
+		if(pd.containsKey("condition")){
+			if(!"-1".equals(pd.get("condition"))){ //非-1说明是条件查询
+				page.setPd(pd);
+				mv.addObject(pd.getString("condition"),true);
+				if(pd.containsKey("conditionVal")){
+					mv.addObject("conditionVal",pd.getString("conditionVal"));
+				}
+			}
+		}
+	}
 }

@@ -43,10 +43,14 @@ function validateNoNull(formId){
     }
 }
 /**
- * 校验非空
+ * 校验非空 ,值为空返回真
  * */
-function isEnpty (){
-
+function isEnpty (value){
+    if(value === null || value === '' || value === undefined){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 //去掉字符串头尾空格

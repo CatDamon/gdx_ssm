@@ -24,7 +24,18 @@ public class RoleManageServiceImpl extends BaseServiceImpl implements RoleManage
     @Override
     public List<PageData> findRole(Page page) throws Exception {
         logger.info("RoleManageServiceImpl findRole...");
+        return (List<PageData>) this.daoSupport.findForList("RoleManageMapper.selectRolelistPage",page);
+    }
 
-        return null;
+    /**
+     * 保存角色
+     *
+     * @param pageData
+     */
+    @Override
+    public void saveRole(PageData pageData) throws Exception {
+        logger.info("RoleManageServiceImpl saveRole...");
+        pageData.put("roleid",get32UUID());
+        this.daoSupport.save("RoleManageMapper.saveRole",pageData);
     }
 }
