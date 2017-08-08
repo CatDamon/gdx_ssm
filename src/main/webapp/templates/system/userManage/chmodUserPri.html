@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分配用户角色权限</title>
+    <style type="text/css">
+        .borderwg{
+            margin:3px 3px 3px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="am-tabs borderwg" id="doc-my-tabs" >
+        <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active"><a href="">分配角色</a></li>
+            <li><a href="">分配权限</a></li>
+        </ul>
+        <div class="am-tabs-bd"  style="height:365px">
+            <div class="am-tab-panel am-active">
+                <select  multiple  data-am-selected="{searchBox: 1,maxHeight: 200}">
+                    <option value="a">Apple</option>
+                    <option value="b">Banana</option>
+                    <option value="o">Orange</option>
+                    <option value="m">Mango</option>
+                    <option value="phone">iPhone</option>
+                    <option value="im">iMac</option>
+                    <option value="mbp">Macbook Pro</option>
+                </select>
+            </div>
+            <div class="am-tab-panel">分配权限内容</div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    $(function() {
+        $('#doc-my-tabs').tabs();
+
+        // 使用默认参数
+        $('select').selected();
+
+        // 设置参数
+        $('select').selected({
+            btnWidth: '350px',
+            btnSize: 'sm',
+            btnStyle: 'primary',
+            maxHeight: '100px'
+        });
+    })
+</script>

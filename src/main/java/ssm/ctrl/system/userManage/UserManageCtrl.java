@@ -2,6 +2,7 @@ package ssm.ctrl.system.userManage;
 
 import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -102,6 +103,16 @@ public class UserManageCtrl extends BaseController {
 		ModelAndView mv = new ModelAndView("forward:/system/userManage/toUserManage");
 		PageData pageData = this.getPageData();
 		this.userManageService.delUser(pageData);
+		return mv;
+	}
+
+	/**分配用户角色权限*/
+	@RequestMapping("/toChmodPage")
+	public ModelAndView toChmodPage (){
+		logger.info("UserManageCtrl toChmodPage...");
+		ModelAndView mv =  new ModelAndView("/system/userManage/chmodUserPri.html");
+
+
 		return mv;
 	}
 
