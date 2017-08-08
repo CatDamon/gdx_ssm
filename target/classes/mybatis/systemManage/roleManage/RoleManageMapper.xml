@@ -20,8 +20,18 @@
 		)
 	</insert>
 
-	<!-- 根据用户名查询是否有记录 -->
-	<select id="isHasSaveAccount" parameterType="pd" resultType="pd">
-		select username from ry_user where username = #{username}
-	</select>
+
+
+	<!-- 删除角色 -->
+	<delete id="delRole" parameterType="pd">
+		delete from ry_role where roleid = #{roleid}
+	</delete>
+
+	<!-- 修改角色 -->
+	<update id="editRole" parameterType="pd">
+		update ry_role set
+			rolename = #{rolename}
+		where roleid = #{roleid}
+	</update>
+
 </mapper>

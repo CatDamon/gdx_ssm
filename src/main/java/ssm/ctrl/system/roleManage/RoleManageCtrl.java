@@ -40,7 +40,7 @@ public class RoleManageCtrl extends BaseController {
     /**跳转到添加角色页面*/
     @RequestMapping("/toAddRole")
     public ModelAndView toAddRole () throws Exception{
-        logger.info("UserManageCtrl toAddRole...");
+        logger.info("RoleManageCtrl toAddRole...");
         ModelAndView mv = new ModelAndView("/system/roleManage/addRole.html");
         return mv;
     }
@@ -49,7 +49,7 @@ public class RoleManageCtrl extends BaseController {
     @RequestMapping("/saveRole")
     @ResponseBody
     public Map<String, Object> saveRole(){
-        logger.info("UserManageCtrl saveRole...");
+        logger.info("RoleManageCtrl saveRole...");
         Map<String,Object> map = new HashMap<String, Object>();
         PageData pd = this.getPageData();
         try {
@@ -61,4 +61,32 @@ public class RoleManageCtrl extends BaseController {
         return map;
     }
 
+
+    /**删除角色*/
+    @RequestMapping("/delRole")
+    public ModelAndView delRole() throws Exception {
+        logger.info("RoleManageCtrl delRole...");
+        ModelAndView mv = new ModelAndView("forward:/system/RoleManageCtrl/toRoleIndex");
+        PageData pd = this.getPageData();
+        this.roleManageService.delRole(pd);
+        return mv;
+    }
+
+
+    /**跳转到修改角色页面*/
+    @RequestMapping("/toEditRole")
+    public ModelAndView toEditRole () throws Exception{
+        logger.info("RoleManageCtrl toeEditRole...");
+        ModelAndView mv = new ModelAndView("/system/roleManage/editRole.html");
+        return mv;
+    }
+
+    @RequestMapping("/editRole")
+    public ModelAndView editRole() throws Exception {
+        logger.info("RoleManageCtrl editRole...");
+        ModelAndView mv = new ModelAndView("forward:/system/RoleManageCtrl/toRoleIndex");
+        PageData pd = this.getPageData();
+        this.roleManageService.editRole(pd);
+        return mv;
+    }
 }

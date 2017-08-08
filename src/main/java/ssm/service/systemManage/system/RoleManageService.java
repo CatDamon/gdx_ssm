@@ -15,4 +15,10 @@ public interface RoleManageService {
 
     /**保存角色*/
     public void saveRole(PageData pageData) throws Exception;
+
+    /**删除角色*/
+    public void delRole (PageData pageData) throws Exception;
+
+    /**修改角色*/
+    public  void editRole(PageData pageData) throws Exception;
 }

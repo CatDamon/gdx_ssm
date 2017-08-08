@@ -108,7 +108,27 @@ function activativeAccount(obj){
          }
          window.location.href="/system/userManage/activativeAccount?userid="+userid+"&availableCode="+availableCode;
     }
+}
 
+/**分配角色*/
+function assignRole(){
+    $.ajax({
+        url:"",
+        type:"post"
+    }).done(function(data){
+        layer.open({
+           type: 1,
+           shade: [0.6, '#AAAAAA'],
+           area: ["450px", "500px"],
+           title: "修改用户密码",
+           content: data,
+           btn:['确定','取消'],
+           yes:function () {
+
+           },
+           btn2:function () {
+
+<<<<<<< HEAD
 }
 
 //分配角色权限
@@ -150,4 +170,9 @@ function chmodPri (obj){
         });
     });
 
+=======
+            }
+          });
+    })
+>>>>>>> c19f89080fe097df3c1479b76c81b0646b472520
 }

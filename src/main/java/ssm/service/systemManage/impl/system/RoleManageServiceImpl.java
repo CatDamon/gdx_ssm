@@ -38,4 +38,26 @@ public class RoleManageServiceImpl extends BaseServiceImpl implements RoleManage
         pageData.put("roleid",get32UUID());
         this.daoSupport.save("RoleManageMapper.saveRole",pageData);
     }
+
+    /**
+     * 删除角色
+     *
+     * @param pageData
+     */
+    @Override
+    public void delRole(PageData pageData) throws Exception {
+        logger.info("RoleManageServiceImpl delRole...");
+        this.daoSupport.delete("RoleManageMapper.delRole",pageData);
+    }
+
+    /**
+     * 修改角色
+     *
+     * @param pageData
+     */
+    @Override
+    public void editRole(PageData pageData) throws Exception {
+        logger.info("RoleManageServiceImpl editRole...");
+        this.daoSupport.update("RoleManageMapper.editRole",pageData);
+    }
 }
