@@ -110,69 +110,46 @@ function activativeAccount(obj){
     }
 }
 
-/**分配角色*/
-function assignRole(){
-    $.ajax({
-        url:"",
-        type:"post"
-    }).done(function(data){
-        layer.open({
-           type: 1,
-           shade: [0.6, '#AAAAAA'],
-           area: ["450px", "500px"],
-           title: "修改用户密码",
-           content: data,
-           btn:['确定','取消'],
-           yes:function () {
-
-           },
-           btn2:function () {
-
-<<<<<<< HEAD
-}
 
 //分配角色权限
 function chmodPri (obj){
-    if(isEmpty($(obj).attr('value'))){
-        layer.msg("用户id不能为空！！",{icon:5});
-        return false;
-    }
-    $.ajax({
-        url:"/system/userManage/toChmodPage",
-        type: "POST"
-    }).done(function(data) {
-        layer.open({
-            type: 1,
-            shade: [0.6, '#AAAAAA'],
-            area: ["450px", "500px"],
-            title: "分配用户角色权限",
-            content: data,
-            btn:['确定','取消'],
-            yes:function () {
-                $.ajax({
-                    url:"/system/userManage/editUser?userid="+userid,
-                    datatype:"json",
-                    type:"post",
-                    data:$("#editUserForm").serialize(),
-                    success:function (data) {
-                        if(data.error != null && data.error != ""){
-                            layer.msg(data.error,{icon: 5});
-                        }else{
-                            window.top.layer.msg("保存成功",{icon: 1});
-                            window.location.reload();
-                        }
+        {
+            if (isEmpty($(obj).attr('value'))) {
+                layer.msg("用户id不能为空！！", {icon: 5});
+                return false;
+            }
+            $.ajax({
+                url: "/system/userManage/toChmodPage",
+                type: "POST"
+            }).done(function (data) {
+                layer.open({
+                    type: 1,
+                    shade: [0.6, '#AAAAAA'],
+                    area: ["450px", "500px"],
+                    title: "分配用户角色权限",
+                    content: data,
+                    btn: ['确定', '取消'],
+                    yes: function () {
+                        $.ajax({
+                            url: "/system/userManage/editUser?userid=" + userid,
+                            datatype: "json",
+                            type: "post",
+                            data: $("#editUserForm").serialize(),
+                            success: function (data) {
+                                if (data.error != null && data.error != "") {
+                                    layer.msg(data.error, {icon: 5});
+                                } else {
+                                    window.top.layer.msg("保存成功", {icon: 1});
+                                    window.location.reload();
+                                }
+                            }
+                        })
+                    },
+                    btn2: function () {
+
                     }
-                })
-            },
-            btn2:function () {
+                });
+            });
+        }
 
-            }
-        });
-    });
-
-=======
-            }
-          });
-    })
->>>>>>> c19f89080fe097df3c1479b76c81b0646b472520
 }
