@@ -95,5 +95,14 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
 
     }
 
+    /**
+     * 查询所有角色
+     */
+    @Override
+    public List<PageData> findAllRole() throws Exception {
+        logger.info("UserManageServiceImpl findAllRole...");
+        return (List<PageData>) this.daoSupport.findForList("UserManageMapper.findAllRole");
+    }
+
 
 }

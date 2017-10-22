@@ -111,18 +111,19 @@ function activativeAccount(obj){
 }
 
 
-//分配角色权限
+        //分配角色权限
 function chmodPri (obj){
-        {
             if (isEmpty($(obj).attr('value'))) {
                 layer.msg("用户id不能为空！！", {icon: 5});
                 return false;
             }
+            var userid = $(obj).attr('value');
             $.ajax({
                 url: "/system/userManage/toChmodPage",
-                type: "POST"
+                type: "GET"
             }).done(function (data) {
                 layer.open({
+                    id:"chomdroleandper",
                     type: 1,
                     shade: [0.6, '#AAAAAA'],
                     area: ["450px", "500px"],
@@ -130,11 +131,19 @@ function chmodPri (obj){
                     content: data,
                     btn: ['确定', '取消'],
                     yes: function () {
-                        $.ajax({
-                            url: "/system/userManage/editUser?userid=" + userid,
+                        //获取下拉框勾选项
+                        //var selectedArr = $("#chmodUserPriForm .am-selected-list").attr("style");
+                        var selectedArr = $("#chmodUserPriForm .am-selected-list .am-checked").each(function (i) {
+                            alert($(this).attr("data-value"));
+                        });
+                        //alert(selectedArr);
+                        /*$.ajax({
+                            url: "/system/userManage/saveRoleAndPermission",
                             datatype: "json",
                             type: "post",
-                            data: $("#editUserForm").serialize(),
+                            data: {
+                                "userid":userid
+                            },
                             success: function (data) {
                                 if (data.error != null && data.error != "") {
                                     layer.msg(data.error, {icon: 5});
@@ -143,13 +152,62 @@ function chmodPri (obj){
                                     window.location.reload();
                                 }
                             }
-                        })
+                        })*/
                     },
                     btn2: function () {
 
                     }
                 });
             });
-        }
+    }
 
+function initMenuTreeForUserPage(){
+    $("#treeDemoForUserPage").innerHTML = "";
+    var zTreeObj;
+    var setting = {
+        view: {
+            selectedMulti: true
+        },
+        async:{
+            enable:true,
+            url:"/system/MenuManageCtrl/loadSonMenu",
+            autoParam:["id","name"]
+        },
+        check: {
+            enable: true,
+            chkStyle: "checkbox",
+            chkDisabledInherit: true,
+            chkboxType: { "Y": "ps", "N": "ps" }
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        edit: {
+            enable: false,
+            editNameSelectAll: true,
+            showRemoveBtn: false,
+            showRenameBtn: false
+        },
+        callback: {
+        }
+    };
+    var zNodes ;
+    $.ajax({
+        url: "/system/MenuManageCtrl/returnZtreeData",
+        type: "post",
+        datatype:"json",
+        success: function (data) {
+            if(data == null || data == ''){
+                layer.msg(data.error);
+                return false;
+            }else{
+                zNodes = data.data;
+                $.fn.zTree.init($("#treeDemoForUserPage"), setting, eval('(' + zNodes + ')')); //zNodes需要 转换成json对象
+            }
+        }
+    })
 }
+
+

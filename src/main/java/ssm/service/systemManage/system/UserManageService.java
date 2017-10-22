@@ -29,6 +29,11 @@ public interface UserManageService {
 
     /**删除用户*/
     public void delUser(PageData pageData) throws Exception;
+
+    /**查询所有角色*/
+    public List<PageData> findAllRole() throws Exception;
+
+
 }
 
 

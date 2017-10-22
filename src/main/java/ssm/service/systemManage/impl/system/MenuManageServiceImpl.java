@@ -193,7 +193,7 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
         if(StringUtil.isNotBlank(pageData.getString("id"))){
             List<PageData> list = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.findSonMenu",pageData);
             if(list.size() == 0){
-                throw new SystemServiceException("undefined");
+                throw new SystemServiceException("没有可用的子菜单!");
             }
             sb.append("[");
             for(int i=0; i<list.size(); i++){

@@ -49,4 +49,9 @@
 	<delete id="delUser" parameterType="pd">
 		delete from ry_user where userid = #{userid}
 	</delete>
+
+	<!-- 查询全部角色 -->
+	<select id="findAllRole" resultType="pd">
+		select * from ry_role;
+	</select>
 </mapper>

@@ -108,12 +108,24 @@ public class UserManageCtrl extends BaseController {
 
 	/**分配用户角色权限*/
 	@RequestMapping("/toChmodPage")
-	public ModelAndView toChmodPage (){
+	public ModelAndView toChmodPage () throws Exception {
 		logger.info("UserManageCtrl toChmodPage...");
 		ModelAndView mv =  new ModelAndView("/system/userManage/chmodUserPri.html");
-
-
+		List<PageData> roleList = this.userManageService.findAllRole();
+		mv.addObject("roleList",roleList);
 		return mv;
+	}
+
+	/**保存用户角色权限*/
+	@RequestMapping("/saveRoleAndPermission")
+	public Map<String,Object> saveRoleAndPermission() {
+		logger.info("UserManageCtrl saveRoleAndPermission...");
+		Map<String, Object> map = new HashMap<String, Object>();
+		PageData pd = this.getPageData(); //取得用户id
+
+
+		System.out.println(pd);
+		return map;
 	}
 
 
