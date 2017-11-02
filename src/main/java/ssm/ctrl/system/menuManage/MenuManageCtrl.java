@@ -85,9 +85,7 @@ public class MenuManageCtrl extends BaseController {
             data = e.getMessage();
             e.printStackTrace();
         }
-        if(data == null){
-            data = "数据加载异常!";
-        }
+
         return data;
 	}
 

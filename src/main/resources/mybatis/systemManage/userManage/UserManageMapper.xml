@@ -54,4 +54,41 @@
 	<select id="findAllRole" resultType="pd">
 		select * from ry_role;
 	</select>
+
+	<!-- 根据用户id保存用户角色 -->
+	<insert id="saveRoleForUser" parameterType="pd">
+		insert into ry_userrole(
+			userid,
+			roleid
+		)values
+		<foreach collection="roleArrs" separator="," item="item" index="index">
+			(
+			#{userid},
+			#{item}
+			)
+		</foreach>
+	</insert>
+
+	<!-- 根据用户id查询目前拥有的角色 -->
+	<select id="findRoleidByUserId" parameterType="pd" resultType="String">
+		select roleid from ry_userrole where userid = #{userid}
+
+	</select>
+
+	<!-- 根据角色id查询角色名称 -->
+	<select id="findRoleName" parameterType="list" resultType="pd">
+
+		select
+			roleid,rolename
+		  from
+		  	ry_role
+		where
+			roleid in
+		<foreach collection="list" separator="," item="item" index="index" open="(" close=")">
+			(
+			#{item}
+			)
+		</foreach>
+
+	</select>
 </mapper>

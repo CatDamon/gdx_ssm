@@ -117,14 +117,18 @@ public class UserManageCtrl extends BaseController {
 	}
 
 	/**保存用户角色权限*/
-	@RequestMapping("/saveRoleAndPermission")
-	public Map<String,Object> saveRoleAndPermission() {
+	@RequestMapping("/saveRoleForUser")
+    @ResponseBody
+	public Map<String,Object> saveRoleForUser() {
 		logger.info("UserManageCtrl saveRoleAndPermission...");
 		Map<String, Object> map = new HashMap<String, Object>();
-		PageData pd = this.getPageData(); //取得用户id
-
-
-		System.out.println(pd);
+		PageData pd = this.getPageData(); //取得用户id和需要分配的角色id
+        try {
+            this.userManageService.saveRoleForUser(pd);
+        } catch (Exception e) {
+            map.put("error",e.getMessage());
+            e.printStackTrace();
+        }
 		return map;
 	}
 

@@ -112,6 +112,7 @@ function activativeAccount(obj){
 
 
         //分配角色权限
+var userManageVar = {};
 function chmodPri (obj){
             if (isEmpty($(obj).attr('value'))) {
                 layer.msg("用户id不能为空！！", {icon: 5});
@@ -127,22 +128,22 @@ function chmodPri (obj){
                     type: 1,
                     shade: [0.6, '#AAAAAA'],
                     area: ["450px", "500px"],
-                    title: "分配用户角色权限",
+                    title: "分配用户角色",
                     content: data,
                     btn: ['确定', '取消'],
                     yes: function () {
                         //获取下拉框勾选项
-                        //var selectedArr = $("#chmodUserPriForm .am-selected-list").attr("style");
-                        var selectedArr = $("#chmodUserPriForm .am-selected-list .am-checked").each(function (i) {
-                            alert($(this).attr("data-value"));
+                        userManageVar.selectedArr = new Array();
+                        $("#chmodUserPriForm .am-selected-list .am-checked").each(function (i) {
+                            userManageVar.selectedArr[i] = $(this).attr("data-value");
                         });
-                        //alert(selectedArr);
-                        /*$.ajax({
-                            url: "/system/userManage/saveRoleAndPermission",
+                        $.ajax({
+                            url: "/system/userManage/saveRoleForUser",
                             datatype: "json",
-                            type: "post",
+                            type: "POST",
                             data: {
-                                "userid":userid
+                                "userid":userid,
+                                "roleArr":userManageVar.selectedArr+""
                             },
                             success: function (data) {
                                 if (data.error != null && data.error != "") {
@@ -152,7 +153,7 @@ function chmodPri (obj){
                                     window.location.reload();
                                 }
                             }
-                        })*/
+                        })
                     },
                     btn2: function () {
 
@@ -209,5 +210,7 @@ function initMenuTreeForUserPage(){
         }
     })
 }
+
+
 
 

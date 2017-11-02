@@ -33,7 +33,8 @@ public interface UserManageService {
     /**查询所有角色*/
     public List<PageData> findAllRole() throws Exception;
 
-
+    /**根据用户id保存对应角色*/
+    public void saveRoleForUser(PageData pageData) throws Exception;
 }
 
 

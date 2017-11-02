@@ -26,7 +26,8 @@ CREATE TABLE ry_role (
 DROP TABLE IF EXISTS ry_userrole;
 CREATE TABLE ry_userrole (
   userid	VARCHAR(32) NOT NULL COMMENT	'用户ID',
-  roleid	VARCHAR(32) NOT NULL COMMENT	'角色ID'
+  roleid	VARCHAR(32) NOT NULL COMMENT	'角色ID',
+  PRIMARY KEY (roleid)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT '用户角色表';
 
 -- 权限表
@@ -47,6 +48,7 @@ CREATE TABLE ry_permission (
 -- 角色权限表
 DROP TABLE IF EXISTS ry_roleper;
 CREATE TABLE ry_roleper (
-  userid	VARCHAR(32) NOT NULL COMMENT	'用户ID',
-  roleid	VARCHAR(32) NOT NULL COMMENT	'角色ID'
+  roleid	VARCHAR(32) NOT NULL COMMENT	'角色ID',
+  per_id	VARCHAR(32) NOT NULL COMMENT	'权限ID',
+  PRIMARY KEY (per_id)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT '角色权限表';

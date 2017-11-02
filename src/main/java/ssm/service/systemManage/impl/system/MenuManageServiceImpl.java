@@ -192,8 +192,9 @@ public class MenuManageServiceImpl extends BaseServiceImpl implements MenuManage
         StringBuilder sb = new StringBuilder(); //封装ztree目录数据
         if(StringUtil.isNotBlank(pageData.getString("id"))){
             List<PageData> list = (List<PageData>) this.daoSupport.findForList("MenuManageMapper.findSonMenu",pageData);
-            if(list.size() == 0){
-                throw new SystemServiceException("没有可用的子菜单!");
+            if(list.size() == 0){ //该目录下没有子菜单
+                return "[]";
+                //throw new SystemServiceException("没有可用的子菜单!");
             }
             sb.append("[");
             for(int i=0; i<list.size(); i++){
