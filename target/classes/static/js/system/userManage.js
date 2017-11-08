@@ -162,54 +162,7 @@ function chmodPri (obj){
             });
     }
 
-function initMenuTreeForUserPage(){
-    $("#treeDemoForUserPage").innerHTML = "";
-    var zTreeObj;
-    var setting = {
-        view: {
-            selectedMulti: true
-        },
-        async:{
-            enable:true,
-            url:"/system/MenuManageCtrl/loadSonMenu",
-            autoParam:["id","name"]
-        },
-        check: {
-            enable: true,
-            chkStyle: "checkbox",
-            chkDisabledInherit: true,
-            chkboxType: { "Y": "ps", "N": "ps" }
-        },
-        data: {
-            simpleData: {
-                enable: true
-            }
-        },
-        edit: {
-            enable: false,
-            editNameSelectAll: true,
-            showRemoveBtn: false,
-            showRenameBtn: false
-        },
-        callback: {
-        }
-    };
-    var zNodes ;
-    $.ajax({
-        url: "/system/MenuManageCtrl/returnZtreeData",
-        type: "post",
-        datatype:"json",
-        success: function (data) {
-            if(data == null || data == ''){
-                layer.msg(data.error);
-                return false;
-            }else{
-                zNodes = data.data;
-                $.fn.zTree.init($("#treeDemoForUserPage"), setting, eval('(' + zNodes + ')')); //zNodes需要 转换成json对象
-            }
-        }
-    })
-}
+
 
 
 

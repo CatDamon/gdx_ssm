@@ -1,6 +1,8 @@
 package ssm.service.systemManage.impl.system;
 
+import org.eclipse.jetty.util.StringUtil;
 import org.springframework.stereotype.Service;
+import ssm.exception.SystemServiceException;
 import ssm.service.common.impl.BaseServiceImpl;
 import ssm.service.systemManage.system.RoleManageService;
 import ssm.utils.Page;
@@ -58,6 +60,33 @@ public class RoleManageServiceImpl extends BaseServiceImpl implements RoleManage
     @Override
     public void editRole(PageData pageData) throws Exception {
         logger.info("RoleManageServiceImpl editRole...");
+        //校验要修改的角色名称是否重复
+        PageData roleData = (PageData) this.daoSupport.findForObject("RoleManageMapper.isHasSameRole",pageData);
+        if(roleData != null){ //名字重复,抛出异常
+            throw new SystemServiceException("角色名称重复,请重新输入!");
+        }
         this.daoSupport.update("RoleManageMapper.editRole",pageData);
+    }
+
+    /**
+     * 保存角色对应权限
+     *
+     * @param pageData
+     */
+    @Override
+    public void saveRolePri(PageData pageData) throws Exception {
+        logger.info("RoleManageServiceImpl saveRolePri...");
+        String checkArrStr = pageData.getString("checkArr");
+        if(StringUtil.isNotBlank(checkArrStr)){
+            String[] checkArrs = checkArrStr.split(",");
+            pageData.put("checkArrs",checkArrs);
+            this.daoSupport.save("RoleManageMapper.saveRolePri",pageData);
+        }else{
+            throw new SystemServiceException("请勾选需要分配的权限！");
+        }
+
+
+
+
     }
 }

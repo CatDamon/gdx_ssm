@@ -31,7 +31,7 @@ public class RoleManageCtrl extends BaseController {
         logger.info("RoleManageCtrl toRoleIndex...");
         ModelAndView mv = new ModelAndView("/system/roleManage/roleIndex.html");
         PageData pd = this.getPageData();
-        this.setConditionForQuery(pd,mv,page);
+        this.setConditionForQuery(pd,mv,page); //设置查询条件函数
         List<PageData> roleList = this.roleManageService.findRole(page);
         mv.addObject("roleList",roleList);
         return mv;
@@ -82,11 +82,41 @@ public class RoleManageCtrl extends BaseController {
     }
 
     @RequestMapping("/editRole")
-    public ModelAndView editRole() throws Exception {
+    @ResponseBody
+    public Map<String, Object> editRole()  {
         logger.info("RoleManageCtrl editRole...");
-        ModelAndView mv = new ModelAndView("forward:/system/RoleManageCtrl/toRoleIndex");
+        Map<String, Object> map = new HashMap<String, Object>();
         PageData pd = this.getPageData();
-        this.roleManageService.editRole(pd);
+        try {
+            this.roleManageService.editRole(pd);
+        } catch (Exception e) {
+            map.put("error",e.getMessage());
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    /**跳转到分配权限页面*/
+    @RequestMapping("/toChmodRolePri")
+    public ModelAndView toChmodRolePri (){
+        logger.info("RoleManageCtrl toChmodRolePri...");
+        ModelAndView mv = new ModelAndView("/system/roleManage/chmodRolePri.html");
         return mv;
     }
+
+    @RequestMapping("/saveRolePri")
+    @ResponseBody
+    public Map<String, Object> saveRolePri () {
+        logger.info("RoleManageCtrl saveRolePri...");
+        Map<String,Object> map = new HashMap<String, Object>();
+        PageData pageData = this.getPageData();
+        try {
+            this.roleManageService.saveRolePri(pageData);
+        } catch (Exception e) {
+            map.put("error",e.getMessage());
+            e.printStackTrace();
+        }
+        return map;
+    }
+
 }

@@ -27,11 +27,32 @@
 		delete from ry_role where roleid = #{roleid}
 	</delete>
 
+	<!-- 校验角色名是否重复 -->
+	<select id="isHasSameRole" parameterType="pd" resultType="pd">
+		select rolename from ry_role where rolename = #{rolename}
+
+	</select>
+
 	<!-- 修改角色 -->
 	<update id="editRole" parameterType="pd">
 		update ry_role set
 			rolename = #{rolename}
 		where roleid = #{roleid}
 	</update>
+
+
+	<!-- 根据角色id保存权限ID -->
+	<insert id="saveRolePri" parameterType="pd" >
+		insert into ry_roleper(
+			roleid,
+			per_id
+		)values
+		<foreach collection="checkArrs" index="index" item="item" separator=",">
+			(
+				#{roleid},
+				#{item}
+			)
+		</foreach>
+	</insert>
 
 </mapper>

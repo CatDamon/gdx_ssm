@@ -93,6 +93,7 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
     @Override
     public void delUser(PageData pageData) throws Exception {
         logger.info("UserManageServiceImpl delUser...");
+        this.daoSupport.delete("UserManageMapper.delRole",pageData);
         this.daoSupport.delete("UserManageMapper.delUser",pageData);
 
     }
@@ -130,8 +131,6 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
         this.distinctRoleId(pageData,roleIdList,roleIdList2);
 
 
-
-
         this.daoSupport.save("UserManageMapper.saveRoleForUser",pageData);
 
     }
@@ -154,21 +153,19 @@ public class UserManageServiceImpl extends BaseServiceImpl implements UserManage
 
                 }
             }
+        }
 
-            if(roleIdList2.size() == 0){ //当前没有需要添加的角色
-                List<PageData> exitRolesList = (List<PageData>) this.daoSupport.findForList("UserManageMapper.findRoleName",exitRoles);
-                StringBuffer sb = new StringBuffer();
-                sb.append("当前选择的< ");
-                for (PageData exitRole : exitRolesList){
-                    sb.append(exitRole.getString("rolename")+" ");
-                }
-                sb.append(" >角色已经存在,请重新选择!");
-                throw new SystemServiceException(sb.toString());
-            }else{
-                pageData.put("roleArrs",roleIdList2.toArray());
+        if(roleIdList2.size() == 0){ //当前没有需要添加的角色,把已经存在的角色名称返回到前端
+            List<PageData> exitRolesList = (List<PageData>) this.daoSupport.findForList("UserManageMapper.findRoleName",exitRoles);
+            StringBuffer sb = new StringBuffer();
+            sb.append("当前选择的< ");
+            for (PageData exitRole : exitRolesList){
+                sb.append(exitRole.getString("rolename")+" ");
             }
-
-
+            sb.append(" >角色已经存在,请重新选择!");
+            throw new SystemServiceException(sb.toString());
+        }else{
+            pageData.put("roleArrs",roleIdList2.toArray());
         }
 
 

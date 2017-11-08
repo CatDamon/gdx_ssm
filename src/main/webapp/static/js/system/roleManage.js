@@ -42,11 +42,12 @@ $(function () {
     });
 
     /**跳转到修改角色的界面*/
-     $("#editRole").on('click',function () {
-            var roleid = $('#editRole').attr("value");
+     $(".editRole").on('click',function () {
+            var roleid = $(this).attr("value");
+            var oldrolename = $(this).attr("rolename");
             $.ajax({
                 url:"/system/RoleManageCtrl/toEditRole",
-                type: "POST"
+                type: "GET"
             }).done(function(data) {
                 layer.open({
                     type: 1,
@@ -55,6 +56,10 @@ $(function () {
                     title: "修改角色",
                     content: data,
                     btn:['确定','取消'],
+                    success: function(layero, index){
+                        //打开弹框同时赋值角色名到input里面
+                        $('input[name=rolename]').val(oldrolename);
+                    },
                     yes:function () {
                         //角色名称不能为空
                         var rolename = $('input[name=rolename]').val();
@@ -66,6 +71,11 @@ $(function () {
                             layer.msg("角色ID不能为空",{icon: 5});
                             return false;
                         }
+                        //判断角色名称是否没有做更改
+                        if(rolename == oldrolename){ //没有更改，不能提交更改请求
+                            layer.msg("角色名称没有更改!请更改新名称",{icon: 5});
+                            return false;
+                        }
                         $.ajax({
                             url:"/system/RoleManageCtrl/editRole?roleid="+roleid,
                             datatype:"json",
@@ -73,7 +83,7 @@ $(function () {
                             data:$("#editRoleForm").serialize(),
                             success:function (data) {
                                 if(data.error != null && data.error != ""){
-                                    layer.msg("修改失败!",{icon: 5});
+                                    layer.msg(data.error,{icon: 5});
                                 }else{
                                     window.top.layer.msg("修改成功",{icon: 1});
                                     window.location.reload();
@@ -89,14 +99,119 @@ $(function () {
         });
 
     /**删除角色*/
-    $("#delRole").on("click",function () {
+    $(".delRole").on("click",function () {
+        var roleid = $(this).attr("value");
         layer.confirm('是否删除?', function(index){
-            var roleid = $("#delRole").attr("value");
             if(isEmpty(roleid)){
-                layer.msg("权限id不能为空",{icon: 5});
+                layer.msg("角色id不能为空",{icon: 5});
                 return false;
             }
             window.location.href = "/system/RoleManageCtrl/delRole?roleid="+roleid;
         });
     })
+
+    /**跳转分配权限页面*/
+    $(".chmodrolepri").on('click',function () {
+        let roleid = $(this).attr("value");
+        $.ajax({
+            url:"/system/RoleManageCtrl/toChmodRolePri",
+            type: "POST"
+        }).done(function(data) {
+            layer.open({
+                type: 1,
+                shade: [0.6, '#AAAAAA'],
+                area: ["450px", "500px"],
+                title: "修改权限",
+                content: data,
+                btn:['确定','取消'],
+                success:function(layero, index){
+                    $("input[name=roleid]").val(roleid);
+                },
+                yes:function () {
+                    //判断角色ID不能为空
+                    if(isEmpty(roleid)){
+                        layer.msg("角色id不能为空",{icon: 5});
+                    }
+                    //获取当前选中的权限
+                    let treeObj=$.fn.zTree.getZTreeObj("treeDemoForRolePage");
+                    let nodes=treeObj.getCheckedNodes(true);
+                    let checkArr = new Array();
+                    $(nodes).each(function (i) {
+                        checkArr[i] = $(this).attr("id");
+                    })
+                    $.ajax({
+                        url:"/system/RoleManageCtrl/saveRolePri",
+                        type:"POST",
+                        datatyle:"json",
+                        data:{
+                            "roleid":roleid,
+                            "checkArr":checkArr+""
+                        },
+                        success:function (data) {
+                            if(data.error != null && data.error != ''){
+                                layer.msg(data.error,{icon: 5});
+                            }else{
+                                layer.msg("sds");
+                            }
+                        }
+                    })
+                },
+                btn2:function () {
+
+                }
+            });
+        });
+    });
+
 });
+
+
+//初始化权限菜单树
+function initMenuTreeForRolePage(){
+    $("#treeDemoForRolePage").innerHTML = "";
+    var zTreeObj;
+    var setting = {
+        view: {
+            selectedMulti: true
+        },
+        async:{
+            enable:true,
+            url:"/system/MenuManageCtrl/loadSonMenu",
+            autoParam:["id","name"]
+        },
+        check: {
+            enable: true,
+            chkStyle: "checkbox",
+            chkDisabledInherit: true,
+            chkboxType: { "Y": "ps", "N": "ps" }
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        edit: {
+            enable: false,
+            editNameSelectAll: true,
+            showRemoveBtn: false,
+            showRenameBtn: false
+        },
+        callback: {
+        }
+    };
+    var zNodes ;
+    $.ajax({
+        url: "/system/MenuManageCtrl/returnZtreeData",
+        type: "post",
+        datatype:"json",
+        success: function (data) {
+            if(data == null || data == ''){
+                layer.msg(data.error);
+                return false;
+            }else{
+                zNodes = data.data;
+                $.fn.zTree.init($("#treeDemoForRolePage"), setting, eval('(' + zNodes + ')')); //zNodes需要 转换成json对象
+            }
+        }
+    })
+}

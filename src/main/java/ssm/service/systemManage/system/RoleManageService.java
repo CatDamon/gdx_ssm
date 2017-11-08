@@ -21,4 +21,8 @@ public interface RoleManageService {
 
     /**修改角色*/
     public  void editRole(PageData pageData) throws Exception;
+
+
+    /**保存角色对应权限*/
+    public  void saveRolePri(PageData pageData) throws Exception;
 }
