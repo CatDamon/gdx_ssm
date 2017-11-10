@@ -36,21 +36,22 @@ $(function () {
     });
 
     /**跳转到修改用户界面*/
-    $("#editUser").on('click',function () {
+    $(".editUser").on('click',function () {
            var userid = $(this).attr("value");
+           var username = $(this).attr("username");
            if(isEmpty(userid)){
                 layer.msg("userid不能为空!修改失败",{icon: 5});
                 return false;
            }
            $.ajax({
-               url:"/system/userManage/toEditUser",
+               url:"/system/userManage/toEditUser?username="+username,
                type: "POST"
             }).done(function(data) {
                 layer.open({
                     type: 1,
                     shade: [0.6, '#AAAAAA'],
                     area: ["450px", "500px"],
-                    title: "修改用户密码",
+                    title: "修改< "+ username +" >密码",
                     content: data,
                     btn:['确定','取消'],
                     yes:function () {
@@ -111,16 +112,17 @@ function activativeAccount(obj){
 }
 
 
-        //分配角色权限
+        //分配角色
 var userManageVar = {};
 function chmodPri (obj){
+            var username = $(obj).attr("username");
             if (isEmpty($(obj).attr('value'))) {
                 layer.msg("用户id不能为空！！", {icon: 5});
                 return false;
             }
             var userid = $(obj).attr('value');
             $.ajax({
-                url: "/system/userManage/toChmodPage",
+                url: "/system/userManage/toChmodPage?username="+username,
                 type: "GET"
             }).done(function (data) {
                 layer.open({

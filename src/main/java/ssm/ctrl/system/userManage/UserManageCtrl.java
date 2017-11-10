@@ -76,6 +76,7 @@ public class UserManageCtrl extends BaseController {
 	public ModelAndView toEditUser () throws Exception{
 		logger.info("UserManageCtrl toEditUser...");
 		ModelAndView mv = new ModelAndView("/system/userManage/editUser.html");
+		mv.addObject("username",this.getPageData().getString("username"));
 		return mv;
 	}
 
@@ -106,17 +107,18 @@ public class UserManageCtrl extends BaseController {
 		return mv;
 	}
 
-	/**分配用户角色权限*/
+	/**分配用户角色*/
 	@RequestMapping("/toChmodPage")
 	public ModelAndView toChmodPage () throws Exception {
 		logger.info("UserManageCtrl toChmodPage...");
 		ModelAndView mv =  new ModelAndView("/system/userManage/chmodUserPri.html");
 		List<PageData> roleList = this.userManageService.findAllRole();
+		mv.addObject("username",this.getPageData().getString("username"));
 		mv.addObject("roleList",roleList);
 		return mv;
 	}
 
-	/**保存用户角色权限*/
+	/**保存用户角色*/
 	@RequestMapping("/saveRoleForUser")
     @ResponseBody
 	public Map<String,Object> saveRoleForUser() {

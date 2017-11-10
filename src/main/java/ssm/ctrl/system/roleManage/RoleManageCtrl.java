@@ -101,6 +101,23 @@ public class RoleManageCtrl extends BaseController {
     public ModelAndView toChmodRolePri (){
         logger.info("RoleManageCtrl toChmodRolePri...");
         ModelAndView mv = new ModelAndView("/system/roleManage/chmodRolePri.html");
+        PageData pd = this.getPageData();
+        List<PageData> list = null;
+        try {
+            list = this.roleManageService.findPriByRoleId(pd);
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < list.size(); i++){
+                sb.append(list.get(i).getString("per_id"));
+                if(i != (list.size()-1)){
+                    sb.append(",");
+                }
+            }
+            mv.addObject("perList",sb);
+            mv.addObject("rolename",pd.getString("rolename"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         return mv;
     }
 

@@ -76,6 +76,7 @@ public class RoleManageServiceImpl extends BaseServiceImpl implements RoleManage
     @Override
     public void saveRolePri(PageData pageData) throws Exception {
         logger.info("RoleManageServiceImpl saveRolePri...");
+        this.daoSupport.delete("RoleManageMapper.deleteRolePri",pageData);
         String checkArrStr = pageData.getString("checkArr");
         if(StringUtil.isNotBlank(checkArrStr)){
             String[] checkArrs = checkArrStr.split(",");
@@ -85,8 +86,16 @@ public class RoleManageServiceImpl extends BaseServiceImpl implements RoleManage
             throw new SystemServiceException("请勾选需要分配的权限！");
         }
 
+    }
 
-
-
+    /**
+     * 根据RoleId查询权限
+     *
+     * @param pd
+     */
+    @Override
+    public List<PageData> findPriByRoleId(PageData pd) throws Exception{
+        logger.info("RoleManageServiceImpl findPriByRoleId...");
+        return (List<PageData>)this.daoSupport.findForList("RoleManageMapper.findPriByRoleId",pd);
     }
 }

@@ -40,6 +40,10 @@
 		where roleid = #{roleid}
 	</update>
 
+	<!-- 根据角色ID删除权限ID -->
+	<delete id="deleteRolePri" parameterType="pd">
+		delete from ry_roleper where roleid = #{roleid}
+	</delete>
 
 	<!-- 根据角色id保存权限ID -->
 	<insert id="saveRolePri" parameterType="pd" >
@@ -54,5 +58,10 @@
 			)
 		</foreach>
 	</insert>
+
+	<!-- 根据roleid查询权限id进行回显 -->
+	<select id="findPriByRoleId" parameterType="pd" resultType="pd">
+		select per_id from ry_roleper where roleid = #{roleid}
+	</select>
 
 </mapper>

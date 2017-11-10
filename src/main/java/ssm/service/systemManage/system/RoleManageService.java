@@ -25,4 +25,7 @@ public interface RoleManageService {
 
     /**保存角色对应权限*/
     public  void saveRolePri(PageData pageData) throws Exception;
+
+    /**根据RoleId查询权限*/
+    public List<PageData> findPriByRoleId(PageData pd) throws Exception;
 }

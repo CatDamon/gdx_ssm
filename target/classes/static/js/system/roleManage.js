@@ -113,15 +113,16 @@ $(function () {
     /**跳转分配权限页面*/
     $(".chmodrolepri").on('click',function () {
         let roleid = $(this).attr("value");
+        let rolename = $(this).attr("rolename");
         $.ajax({
-            url:"/system/RoleManageCtrl/toChmodRolePri",
+            url:"/system/RoleManageCtrl/toChmodRolePri?roleid="+roleid+"&rolename="+rolename,
             type: "POST"
         }).done(function(data) {
             layer.open({
                 type: 1,
                 shade: [0.6, '#AAAAAA'],
                 area: ["450px", "500px"],
-                title: "修改权限",
+                title: "分配权限",
                 content: data,
                 btn:['确定','取消'],
                 success:function(layero, index){
@@ -151,7 +152,8 @@ $(function () {
                             if(data.error != null && data.error != ''){
                                 layer.msg(data.error,{icon: 5});
                             }else{
-                                layer.msg("sds");
+                                window.top.layer.msg("分配成功!");
+                                window.location.reload();
                             }
                         }
                     })
@@ -164,6 +166,24 @@ $(function () {
     });
 
 });
+
+//回显已选择的权限
+function echoPri(){
+    let list = $("input[name=perList]").val();
+    const treeObj = $.fn.zTree.getZTreeObj("treeDemoForRolePage");
+    let nodes = treeObj.transformToArray(treeObj.getNodes());
+    let perArrs = list.split(",");
+    nodes.forEach((item,index)=>{
+        let that = item;
+        perArrs.forEach((perItem,perIndex)=>{
+            if($(that).attr("id") == perItem){
+                $(that).attr("checked",true);
+                treeObj.updateNode(that);
+            }
+        })
+    })
+}
+
 
 
 //初始化权限菜单树
@@ -197,6 +217,7 @@ function initMenuTreeForRolePage(){
             showRenameBtn: false
         },
         callback: {
+            onExpand: zTreeOnExpand
         }
     };
     var zNodes ;
@@ -212,6 +233,14 @@ function initMenuTreeForRolePage(){
                 zNodes = data.data;
                 $.fn.zTree.init($("#treeDemoForRolePage"), setting, eval('(' + zNodes + ')')); //zNodes需要 转换成json对象
             }
+            echoPri();
+
         }
     })
+
 }
+
+//展开节点触发事件
+function zTreeOnExpand(event, treeId, treeNode) {
+    echoPri();
+};
